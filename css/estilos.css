@@ -1,447 +1,150 @@
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            
-            body {
-                background-color: black;
-            }
-            /*PAGINA INDEX*/
-            
-            .mainIndex {
-                display: grid;
-                grid-template-columns: 45% 45%;
-                grid-template-rows: 1fr;
-                gap: 5px;
-                padding: 20px;
-            }
-            
-            .galeriaMedio {
-                padding: 15px;
-            }
-            
-            .reciente {
-                width: 100%;
-                margin: 20px;
-            }
-            
-            .imgSemanal {
-                width: 100%;
-            }
-            
-            .imgSeleccionSemanal {
-                width: 100%;
-                margin: 10px;
-            }
-            
-            .videoSemanal {
-                width: 90%;
-            }
-            
-            .sectionJugaSem {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            
-            .videoSemana {
-                width: 100%;
-                display: grid;
-            }
-            
-            section p {
-                color: white;
-            }
-            /*FIN DE PAGINA INDEX*/
-            /*Pagina Productos*/
-            
-            .apareceTexto {
-                position: absolute;
-                padding: 40px;
-                font-size: 72px;
-                z-index: 1;
-                font-family: 'Anton', sans-serif;
-            }
-            
-            .animacionapar {
-                animation-duration: 8s;
-                animation-name: animacionapar;
-                animation-iteration-count: 1;
-            }
-            
-            .banner {
-                width: 80%;
-                padding: 20px;
-            }
-            
-            .mainProducs {
-                width: 100%;
-                padding: 20px;
-                display: grid;
-                grid-template-columns: 20% 70%;
-                grid-template-rows: 1fr;
-                background-image: url(../images/fondoProd.jpg);
-            }
-            
-            .mainProd {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-                grid-column-gap: 10px;
-                grid-row-gap: 1em;
-                margin: 40px;
-            }
-            
-            .navinterProd ul {
-                display: block;
-                padding: 0px;
-            }
-            /*fin de pagina productos*/
-            /*Pagina Ayuda*/
-            
-            .mainAyuda {
-                display: grid;
-                grid-template-columns: 20% 80%;
-                grid-template-rows: 1fr;
-                margin: 40px;
-                background-color: #2c3e50;
-            }
-            
-            .contenAyuda {
-                display: grid;
-                margin: 40px;
-                grid-template-columns: 50% 50%;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-            }
-            
-            .caja-1 {
-                grid-column: 1 / 3;
-            }
-            
-            .caja-2 {
-                grid-column: 1 / 3;
-                margin: 20px;
-            }
-            
-            .imgayuda {
-                width: 100%;
-            }
-            /*Fin Pagina ayuda*/
-            /*Pagina Ranking*/
-            
-            .mainRank {
-                display: grid;
-                grid-template-columns: 20% 80%;
-                grid-template-rows: 1fr;
-                margin: 40px;
-            }
-            
-            .contRanking {
-                margin: 20px;
-            }
-            /*Fin pagina ranking*/
-            /*Inicio Pagina Comunidad*/
-            
-            .mainComunity {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
-                gap: 5px;
-                width: 80%;
-                margin: auto;
-            }
-            
-            .contComunit {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr auto auto auto;
-            }
-            
-            .mainContComu {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto auto auto auto;
-                gap: 5px;
-                margin: 5px 5px 50px 50px;
-            }
-            
-            .galerCom {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-            }
-            
-            .imgCom {
-                width: 80%;
-                height: 100%;
-                margin: auto;
-            }
-            /*Se utiliza para las imagenes de las paginas index, producto y Comunidad*/
-            
-            .imgTam {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            /*Fin  */
-            /*Fin pagina Comunidad*/
-            
-            .mainNove {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                gap: 5px;
-                width: 80%;
-                margin: 40px;
-            }
-            /*ADICIONALES*/
-            /*FIN ADICIONALES*/
-            /*navegador*/
-            
-            nav {
-                background-color: #000000;
-                background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-                color: white;
-                width: 100%;
-            }
-            
-            nav ul li a {
-                padding: 20px;
-            }
-            
-            nav ul li {
-                padding: 20px;
-            }
-            
-            nav ul {
-                display: flex;
-                list-style: none;
-            }
-            
-            nav ul li:hover {
-                background-color: white;
-                color: black;
-            }
-            
-            nav ul li a:hover {
-                color: black;
-            }
-            
-            footer ul li a:hover {
-                color: black;
-                font-family: bolder;
-            }
-            /*fin de navegador*/
-            /*Trabajando con el header*/
-            
-            header {
-                display: grid;
-                grid-template-columns: 70% 15% 15%;
-                justify-items: center;
-                align-items: center;
-                position: sticky;
-                z-index: 1;
-            }
-            /*Fin del header*/
-            
-            .titulos {
-                color: white;
-                font-family: 'Bebas Neue', cursive;
-                text-align: center;
-                padding: 20px;
-                width: 100%;
-            }
-            
-            .fondoTexto {
-                width: 100%;
-                padding: 15px;
-                background-color: rgba(0, 0, 0, 0.6);
-            }
-            
-            .tituloAdic {
-                background-color: #000000;
-                background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
-                letter-spacing: 5px;
-                font-size: 26px;
-            }
-            /*BANNER PRODUCTOS*/
-            
-            .subMenuProd {
-                color: white;
-                font-family: 'Lobster', cursive;
-                padding: 20px;
-                margin: 20px;
-                list-style: none;
-            }
-            /**/
-            /*INFO PRODUCTOS*/
-            
-            footer .textofooter {
-                text-align: center;
-            }
-            
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-            
-            footer ul li a {
-                margin: 20px;
-            }
-            
-            footer ul li {
-                padding: 15px;
-                list-style: none;
-            }
-            /*FIN DE PIE DE PAGINA*/
-            /*Formulario*/
-            
-            .registro {
-                width: 60%;
-                background-image: url(../images/fondoregis.jpg);
-                background-size: cover;
-                color: #fff;
-                padding: 50px;
-                margin: auto auto auto auto;
-            }
-            
-            .contac {
-                width: 50%;
-                background-image: url(../images/fondoContac.jpg);
-                background-size: cover;
-                margin: 20px auto auto auto;
-                padding: 50px;
-                color: #fff;
-            }
-            /*COMUNIDAD*/
-            
-            .textocomun {
-                text-align: center;
-                color: white;
-            }
-            
-            .subirImg {
-                background-color: yellow;
-                text-align: center;
-                color: black;
-            }
-            /**/
-            /*PAGINA AYUDA*/
-            /*FIN DE PAGINA AYUDA*/
-            
-            .contenedor {
-                width: 90%;
-            }
-            /*APLICANDO GRILLAS A LA PAGINA PRODUCTOS*/
-            
-            .fotItem {
-                grid-column: 1/3;
-            }
-            
-            header {
-                grid-area: header;
-            }
-            
-            footer {
-                position: absolute;
-                grid-area: footer;
-                width: 100%;
-                color: white;
-                background-color: #414141;
-            }
-            /*FIN DE APLICANDO GRILLAS*/
-            /*Redes Sociales*/
-            
-            .itemredes {
-                width: 50%;
-                transition: height 2s;
-            }
-            
-            .ulredes {
-                width: 10%;
-                display: flex;
-                flex-direction: row;
-                margin: auto;
-                column-gap: 5px;
-            }
-            
-            .iconsRedes {
-                width: 90%;
-                transform: scale 2s;
-            }
-            
-            .iconsRedes:hover {
-                transform: scale(1, 1.1);
-            }
-            /*Fin Redes Sociales*/
-            
-            @keyframes animacionapar {
-                0% {
-                    opacity: 0;
-                }
-                50% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                .mainIndex {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                .mainProducs {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                .mainProd {
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                .mainNove {
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    grid-template-rows: 1fr;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                .mainComunity {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                .galerCom {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                .mainRank {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
-                }
-            }
-            
-            @media screen and (max-width:960px) {
-                nav ul {
-                    display: none;
-                }
-                nav {
-                    width: 100%;
-                }
-            }
+body {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    position: sticky;
+    z-index: 1;
+}
+
+header nav {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    color: white;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav ul li:hover {
+    background-color: #000000;
+    color: inherit;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header nav ul a:hover {
+    color: inherit;
+}
+
+main .mainIndex {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    padding: 20px;
+}
+
+main .mainIndex .sectionJugaSem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .mainIndex .reciente {
+    width: 100%;
+    margin: 20px;
+}
+
+main .mainIndex .reciente p {
+    color: #ffffff;
+}
+
+main .mainIndex .reciente .videoSemanal {
+    width: 90%;
+}
+
+main .imgSemanal {
+    width: 100%;
+}
+
+main .imgSemanal .imgSeleccionSemanal {
+    width: 100%;
+    margin: 10px;
+}
+
+main .prodLista .galeriaMedio {
+    padding: 15px;
+}
+
+footer {
+    position: absolute;
+    grid-area: footer;
+    width: 100%;
+    color: white;
+    background-color: #414141;
+}
+
+footer .textofooter {
+    text-align: center;
+}
+
+footer .ulredes {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    column-gap: 5px;
+}
+
+footer .ulredes .itemredes {
+    width: 50%;
+    transition: height 2s;
+}
+
+footer .ulredes .itemredes .iconsRedes {
+    width: 90%;
+    transform: scale 2s;
+}
+
+footer ul li {
+    padding: 15px;
+    list-style: none;
+}
+
+footer ul li a {
+    margin: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.titulos {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.tituloAdic {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    letter-spacing: 5px;
+    font-size: 26px;
+}
+
+.imgTam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.videoSemanal {
+    width: 90%;
+}

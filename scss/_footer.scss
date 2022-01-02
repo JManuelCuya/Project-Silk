@@ -1,0 +1,36 @@
+footer {
+    position: absolute;
+    grid-area: footer;
+    width: 100%;
+    color: white;
+    background-color: #414141;
+    .textofooter {
+        text-align: center;
+    }
+    .ulredes {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        column-gap: 5px;
+        .itemredes {
+            width: 50%;
+            transition: height 2s;
+            .iconsRedes {
+                width: 90%;
+                transform: scale 2s;
+            }
+        }
+    }
+    ul {
+        li {
+            padding: 15px;
+            list-style: none;
+            a {
+                margin: 20px;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

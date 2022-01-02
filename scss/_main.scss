@@ -1,0 +1,36 @@
+main {
+    .mainIndex {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 1fr;
+        gap: 5px;
+        padding: 20px;
+        .sectionJugaSem {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .reciente {
+            width: 100%;
+            margin: 20px;
+            p {
+                color: $cl_letra
+            }
+            .videoSemanal {
+                width: 90%;
+            }
+        }
+    }
+    .imgSemanal {
+        width: 100%;
+        .imgSeleccionSemanal {
+            width: 100%;
+            margin: 10px;
+        }
+    }
+    .prodLista {
+        .galeriaMedio {
+            padding: 15px;
+        }
+    }
+}
