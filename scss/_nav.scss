@@ -1,0 +1,27 @@
+    nav {
+        background-color: #292525;
+        color: white;
+        width: 100%;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                display: inline-block;
+                padding: 20px;
+                &:hover {
+                    background-color: $cl_fondo;
+                    color: inherit;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 20px;
+                font-family: 'Anton', sans-serif;
+                font-size: 20px;
+                &:hover {
+                    color: inherit;
+                }
+            }
+        }
+    }
