@@ -110,10 +110,17 @@ main {
 .mainRegistro {
     background-image: url(../images/fondoregis.jpg);
     background-size: cover;
-    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     color: #fff;
     padding: 50px;
     margin: 20px auto 20px auto;
+    width: 60%;
+    .cajasEinputs {
+        flex: 0 0 auto;
+        width: 80%;
+    }
 }
 
 .mainNove {
