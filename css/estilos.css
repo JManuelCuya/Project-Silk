@@ -15,9 +15,6 @@ body {
       animation-duration: 8s;
       animation-name: animacionapar;
       animation-iteration-count: 1; }
-  body .textocomun {
-    text-align: center;
-    color: white; }
   body .subirImg {
     background-color: yellow;
     text-align: center;
@@ -47,32 +44,121 @@ header {
       float: right;
       margin: 10px; }
 
-main .mainIndex {
+.mainIndex {
+  width: 100%;
+  height: auto;
   display: grid;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: 1fr;
-  gap: 5px;
-  padding: 20px; }
-  main .mainIndex .sectionJugaSem {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: fr fr fr fr fr;
+  grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "prodLista prodLista" "titulo02 titulo02" "secc4 secc5"; }
+  .mainIndex .portadaIndex {
     width: 100%;
+    grid-area: portadaIndex; }
+    .mainIndex .portadaIndex .imgSeleccionSemanal {
+      width: 100%; }
+  .mainIndex .descripPort {
+    color: white;
+    position: absolute;
+    top: 0px 0px 1500px 1500px;
+    right: 0;
+    height: 100%;
+    width: 33%; }
+  .mainIndex .titulo01 {
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    grid-area: titulo01;
+    width: 100%;
+    height: 100%; }
+  .mainIndex .prodLista {
     display: flex;
-    justify-content: center; }
-  main .mainIndex .reciente {
+    grid-area: prodLista;
+    width: 100%; }
+    .mainIndex .prodLista .itemProd {
+      display: flex;
+      width: 50%;
+      padding: 15px;
+      height: 650px;
+      background-color: #2c3e50;
+      border: 2px solid; }
+      .mainIndex .prodLista .itemProd .imgTam {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid; }
+      .mainIndex .prodLista .itemProd .descripProd {
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        width: 100%; }
+        .mainIndex .prodLista .itemProd .descripProd .tituVenta {
+          background-color: #252c33;
+          font-family: 'Sniglet', cursive;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: #ffffff;
+          padding: 20px;
+          width: 100%; }
+        .mainIndex .prodLista .itemProd .descripProd .btnProd {
+          font-size: 24px;
+          font-family: 'Mochiy Pop P One', sans-serif;
+          font-weight: bold;
+          width: 80%;
+          padding: 20px;
+          margin: auto; }
+  .mainIndex .titulo02 {
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
     width: 100%;
-    margin: 20px; }
-    main .mainIndex .reciente p {
-      color: #ffffff; }
-    main .mainIndex .reciente .videoSemanal {
-      width: 90%; }
-
-main .imgSemanal {
-  width: 100%; }
-  main .imgSemanal .imgSeleccionSemanal {
+    grid-area: titulo02; }
+  .mainIndex .secc4 {
+    grid-area: secc4;
     width: 100%;
-    margin: 10px; }
+    height: 100%; }
+    .mainIndex .secc4 .descripProd {
+      display: grid;
+      place-items: center;
+      width: 100%; }
+      .mainIndex .secc4 .descripProd .tituVenta {
+        background-color: #252c33;
+        font-family: 'Sniglet', cursive;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 20px;
+        width: 100%; }
+    .mainIndex .secc4 .descripVid {
+      display: grid;
+      width: 100%; }
+  .mainIndex .secc5 {
+    grid-area: secc5;
+    width: 100%; }
+    .mainIndex .secc5 .descripProd {
+      display: grid;
+      width: 100%; }
+      .mainIndex .secc5 .descripProd .tituVenta {
+        background-color: #252c33;
+        font-family: 'Sniglet', cursive;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 20px;
+        width: 100%; }
+    .mainIndex .secc5 .galerComd {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px;
+      row-gap: 5px;
+      column-gap: 5px; }
+      .mainIndex .secc5 .galerComd .imgGaler {
+        width: 49.6%;
+        border-radius: 15px; }
+        .mainIndex .secc5 .galerComd .imgGaler:hover {
+          opacity: 0.7; }
 
-main .prodLista .galeriaMedio {
-  padding: 15px; }
+.imgCarro {
+  border-radius: 15px;
+  padding: 5px; }
 
 .mainProducs {
   width: 100%;
@@ -93,10 +179,6 @@ main .prodLista .galeriaMedio {
     grid-column-gap: 10px;
     grid-row-gap: 1em;
     margin: 40px; }
-    .mainProducs .mainProd .imgTam {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
 
 .mainRank {
   display: grid;
@@ -153,10 +235,6 @@ main .prodLista .galeriaMedio {
   gap: 5px;
   width: 80%;
   margin: 40px; }
-  .mainNove .imgTam {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
 
 .mainContac {
   width: 50%;
@@ -242,14 +320,12 @@ nav {
 
 .titulos {
   color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
   text-align: center;
-  padding: 20px;
-  width: 100%; }
+  padding: 20px; }
 
 .tituloAdic {
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
   letter-spacing: 5px;
   font-size: 26px; }
 
@@ -258,5 +334,44 @@ nav {
   height: 100%;
   object-fit: cover; }
 
-.videoSemanal {
-  width: 90%; }
+@media screen and (max-width: 980px) {
+  .mainIndex {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, fr);
+    grid-template-areas: "caja1 caja1" "imgSemanal imgSemanal" "vidElecci vidElecci" "prodLista prodLista" "titulo1 titulo1" "caja3 caja3" "caja4 caja4"; } }
+
+@media screen and (max-width: 960px) {
+  .mainProducs {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
+
+@media screen and (max-width: 960px) {
+  .mainProd {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; } }
+
+@media screen and (max-width: 960px) {
+  .mainNove {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; } }
+
+@media screen and (max-width: 960px) {
+  .mainComunity {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
+
+@media screen and (max-width: 960px) {
+  .galerCom {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
+
+@media screen and (max-width: 960px) {
+  .mainRank {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
+
+@media screen and (max-width: 960px) {
+  nav ul {
+    display: none; }
+  nav {
+    width: 100%; } }
