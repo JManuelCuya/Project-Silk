@@ -15,46 +15,67 @@
 
 <body>
     <header>
-
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
         <div class="div-carr">
-            <img class="iconoHeader" src="../images/carrito-de-compras.png">
+            <div><img class="iconoHeader" src="../images/carrito-de-compras.png"></div>
+            <div><img class="iconoHeader" src="../images/logopagina.png"></div>
         </div>
-        <div class="div-carr">
-            <img class="iconoHeader" src="../images/android-chrome-192x192.png">
-        </div>
-
     </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="ranking.html">Ranking</a> </li>
-            <li><a href="comunidad.html">Comunidad</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="novedades.html">Novedades</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ayuda.html">Ayuda</a></li>
-        </ul>
-    </nav>
+
     <main class="mainContComu">
-        <section class="contComunit">
+        <section class="contComunit ">
+            <div class="subirImg">
+                <h3 class="subtituloComun animate__animated animate__bounce">Lo mejor</h3>
+            </div>
 
-            <h3 class="titulos animate__animated animate__bounce">Lo mejor</h3>
-            <p class="textocomun">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed officiis itaque soluta nisi dolore nemo. Facere nam quia dolorum enim doloremque possimus cum, distinctio sed magni sint! Reiciendis, excepturi! Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Dolor beatae cupiditate unde voluptatibus numquam quidem doloremque, optio ullam officiis, id odit laboriosam, recusandae blanditiis facilis possimus distinctio maxime accusamus Lorem ipsum dolor sit amet
-            </p>
-
+            <div class="contenedorTexto">
+                <p class="textoContenido">Podrás postular con una imagen que refleje los mejores escenarios de tu juego favorito. Además, encontraras consejos de jugadores veteranos e informarte de eventos realizados por algún juego que te interese con los foros que se actualizan
+                    cada semana.
+                </p>
+            </div>
+            <div class="contenedorTexto">
+                <p class="textoContenido">Como enviar tu foto elegida: </p>
+                <p class="textoContenido"> Paso 1 - Subir tu imagen en el botón que esta debajo de este anuncio. </p>
+                <p class="textoContenido"> Paso 2 - Enviar el nombre de tu imagen y Nickname a nuestro correo.</p>
+            </div>
             <p class="subirImg ">Sube tu Imagen aqui para postular a la imagen semanal</p>
             <div class="mb-3">
                 <input class="form-control" type="file" id="formFile">
             </div>
-
             <label class="textocomun ">Dejanos tus comentario para seguir mejorando!</label>
-
             <textarea class="form-control " placeholder="Dejanos tu comentario aqui!" id="floatingTextarea2 " style="height: 100px "></textarea>
         </section>
-        <section class="contComuni ">
-            <h3 class="titulos animate__animated animate__swing">Mejores Consejos:</h3>
+        <section class="contComunit">
+            <div class="subirImg">
+                <h3 class="subtituloComun animate__animated animate__bounce">Torneos</h3>
+                <p class="subirImg ">Participa en los torneos de la Valorant Champions Tour en Latinoamérica.</p>
+            </div>
+            <section class="contComunit">
+
+                <p class="subirImg ">OPEN QUALIFIERS - VALORANT CHALLENGERS ¿Sueñas con representar a LATAM? Acá comienza tu camino a la gloria, compite contra equipos de toda la región por un cupo a la máxima competencia de Valorant</p>
+                <div class="galerCom ">
+                    <img class="imgCom" src="../images/comunidad/imgpromo1.jpg " alt="promo1">
+                    <img class="imgCom" src="../images/comunidad/imgpromo2.jpg " alt="promo2">
+                </div>
+                <p class="subirImg ">OPEN QUALIFIERS - VALORANT GAME CHANGERS Se comienza a escribir un nuevo capitulo en el competitivo de Valorant ¿Formarás parte? Arma tu equipo y compite contra las mejores jugadoras de todo LATAM</p>
+                <div class="galerCom ">
+                    <img class="imgCom" src="../images/comunidad/imgpromo3.jpg " alt="promo3">
+                    <img class="imgCom" src="../images/comunidad/imgpromo4.jpg " alt="promo4">
+                </div>
+            </section>
+        </section>
+        <section class="contComunit">
+            <div class="subirImg">
+                <h3 class="subtituloComun animate__animated animate__swing">Mejores Consejos:</h3>
+            </div>
             <div class="contRanking">
                 <table class="table table-dark table-striped">
                     <thead>
@@ -64,7 +85,6 @@
                             <th scope="col">Fecha</th>
                             <th scope="col">Nickname</th>
                             <th scope="col">Ir al foro</th>
-
                         </tr>
                     </thead>
                     <tbody>
@@ -73,35 +93,37 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td>@mdo</td>
-
+                            <td width="118.22px" height="50px"><img class="irForobtn" src="../images/irforo.png" alt="go"></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>Thornton</td>
-                            <td>Thornton</td>
-
+                            <td width="118.22px"><img class="irForobtn" src="../images/irforo.png" alt="go"></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Larry the Bird</td>
                             <td>@twitter</td>
                             <td>@twitter</td>
-                            <td>@twitter</td>
-
-
+                            <td width="118.22px"><img class="irForobtn" src="../images/irforo.png" alt="go"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-        <h3 class="titulos animate__animated animate__swing ">Mejor Captura</h3>
-        <div class="galerCom ">
-            <img class="imgCom" src="../images/imgcomu2.jpg " alt=" ">
-            <img class="imgCom" src="../images/imgcomu1.jpg " alt=" ">
-        </div>
+        <section class="contComunit">
+            <div class="subirImg">
+                <h3 class="subtituloComun animate__animated animate__swing ">Mejor Captura</h3>
+            </div>
+
+            <div class="galerCom ">
+                <img class="imgCom" src="../images/imgcomu2.jpg " alt=" ">
+                <img class="imgCom" src="../images/imgcomu1.jpg " alt=" ">
+            </div>
+        </section>
+
 
 
     </main>

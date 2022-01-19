@@ -1,17 +1,39 @@
 header {
-    float: right;
-    z-index: 1;
-    .div-carr {
-        width: 100%;
-        .iconoHeader {
-            width: 10%;
-            float: right;
-            margin: 10px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: black;
+    border-bottom: 1px solid rgb(150, 141, 141);
+    .menuRespons {
+        display: none;
+    }
+    nav {
+        width: 80%;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                display: inline-block;
+                padding: 20px;
+                &:hover {
+                    background-color: $cl_letra;
+                    color: $cl_fondo;
+                }
+            }
+            a {
+                @include etiquetasNav;
+            }
         }
-        .iconologo {
-            width: 10%;
-            float: right;
-            margin: 10px;
+    }
+    .div-carr {
+        width: 20%;
+        display: flex;
+        float: left;
+        margin: auto;
+        .iconoHeader {
+            width: $tamanio;
         }
     }
 }

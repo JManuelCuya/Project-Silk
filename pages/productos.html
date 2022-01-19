@@ -17,149 +17,198 @@
 
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
         <div class="div-carr">
-            <img class="iconoHeader" src="../images/carrito-de-compras.png">
-        </div>
-        <div class="div-carr">
-            <img class="iconoHeader" src="../images/android-chrome-192x192.png">
+            <div><img class="iconoHeader" src="../images/carrito-de-compras.png"></div>
+            <div><img class="iconoHeader" src="../images/logopagina.png"></div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="ranking.html">Ranking</a> </li>
-            <li><a href="comunidad.html">Comunidad</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="novedades.html">Novedades</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ayuda.html">Ayuda</a></li>
-        </ul>
-    </nav>
-    <div class="container banner">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <main class="mainProducs">
+        <div class="container banner carrouselConta">
             <h1 class="text-light apareceTexto animacionapar">REVISA LA OFERTA
                 <p> SEMANAL</p>
                 <p> Y OTROS </p>
             </h1>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/car1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/car2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/car3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../images/car1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/car2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../images/car3.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
         </div>
-    </div>
 
-    <main class="mainProducs">
+
         <nav class="navinterProd">
-            <ul>
-                <li><a href="">Aspectos</a></li>
-                <li><a href="">Pet</a></li>
-                <li><a href="">Accesorios</a></li>
-                <li><a href="">Scroll</a></li>
-                <li><a href="">Power</a></li>
+            <ul class="itemNav">
+                <li class="cateNav">
+                    <a href="">Aspectos</a>
+                </li>
+                <li class="cateNav"><a href="">Juegos Populares</a></li>
+                <li class="cateNav"><a href="">Accesorios Recomendados</a></li>
+                <li class="cateNav"><a href="">Hardware Gamer</a></li>
+                <li class="cateNav"><a href="">Modelos de Setup</a></li>
             </ul>
         </nav>
         <section class="mainProd">
-            <div class="card">
+            <div class="itemProducto">
+                <img class="imgTam" src="../images/prod1.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Tom Clancy’s Rainbow Six Extraction</p>
+                    <p class="textoProducto">Deluxe Edition</p>
+                    <p class="textoProducto">S/. 205,99</p>
+                </div>
+            </div>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod2.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Riders Republic</p>
+                    <p class="textoProducto"> Standard Edition</p>
+                    <p class="textoProducto">S/. 199,99</p>
+                </div>
+            </div>
+            <div class="itemProducto ">
                 <img class=" imgTam" src="../images/prod3.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA 1</button>
-
+                <div class="descripJuego">
+                    <p class="textoProducto">Assassin's Creed Valhalla</p>
+                    <p class="textoProducto">Standard Edition</p>
+                    <p class="textoProducto">S/. 199,99</p>
+                </div>
             </div>
-            <div class="card">
+            <div class="itemProducto ">
                 <img class=" imgTam" src="../images/prod4.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA 2</button>
+                <div class="descripJuego">
+                    <p class="textoProducto">Tom Clancy's Ghost Recon Breakpoint</p>
+                    <p class="textoProducto">Deluxe Edition</p>
+                    <p class="textoProducto">S/. 179,00</p>
+                </div>
             </div>
-            <div class="card">
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod5.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Far Cry New Dawn</p>
+                    <p class="textoProducto">
+                        Standard Edition</p>
+                    <p class="textoProducto">S/. 30,00 -75% Desc</p>
+                </div>>
+            </div>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod6.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto"> South Park: Retaguardia en Peligro
+                    </p>
+                    <p class="textoProducto">Standard Edition</p>
+                    <p class="textoProducto">S/. 149,99</p>
+                </div>>
+            </div>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod7.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Immortals Fenyx Rising</p>
+                    <p class="textoProducto">
+                        Standard Edition</p>
+                    <p class="textoProducto">S/. 199,99</p>
+                </div>
+            </div>
+            <div class="itemProducto ">
                 <img class=" imgTam" src="../images/prod8.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA 3</button>
+                <div class="descripJuego">
+                    <p class="textoProducto">Prince of Persia: The Two Thrones</p>
+                    <p class="textoProducto"> Standard Edition</p>
+                    <p class="textoProducto">S/. 6,00 -80% Desc</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA 4</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod9.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Rayman Legends</p>
+                    <p class="textoProducto">
+                        Standard Edition</p>
+                    <p class="textoProducto">S/. 22,50 -75% Desc</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod10.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">God of War</p>
+                    <p class="textoProducto">Deluxe Edition</p>
+                    <p class="textoProducto">S/. 169,00</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod11.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Valorant</p>
+                    <p class="textoProducto">Tendencia</p>
+                    <p class="textoProducto">Gratis</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod12.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Minecraft</p>
+                    <p class="textoProducto">Top</p>
+                    <p class="textoProducto">S/. 90,99</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod13.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Rust - on Steam</p>
+                    <p class="textoProducto">Tendencia</p>
+                    <p class="textoProducto">S/. 69,00</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod14.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">Marvel's Guardians of the Galaxy</p>
+                    <p class="textoProducto">Deluxe Edition</p>
+                    <p class="textoProducto">S/. 199,99</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod15.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">New World</p>
+                    <p class="textoProducto">Deluxe Edition</p>
+                    <p class="textoProducto">S/. 70,00</p>
+                </div>
             </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
-            </div>
-            <div class="card">
-                <img class=" imgTam" src="../images/prod2.jpg" alt="">
-                <button type="button" class="btn btn-primary">VER OFERTA</button>
+            <div class="itemProducto ">
+                <img class=" imgTam" src="../images/prod16.jpg" alt="">
+                <div class="descripJuego">
+                    <p class="textoProducto">League of Legends</p>
+                    <p class="textoProducto">Tendencia</p>
+                    <p class="textoProducto">Gratis</p>
+                </div>
             </div>
         </section>
     </main>
@@ -179,11 +228,7 @@
                 <img class="iconsRedes" src="../images/instagram.png">
             </div>
         </div>
-
-
-
         <p class="textofooter"> Copyright © Todos los derechos reservados</p>
-
         <ul>
             <li><a href="">Politicas</a></li>
             <li><a href="">Privacidad</a></li>

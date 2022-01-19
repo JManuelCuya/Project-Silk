@@ -1,83 +1,74 @@
-  @import "variables";
-  @import "body";
-  @import "header";
-  @import "main";
-  @import "footer";
-  @import "nav";
-  .titulos {
-      color: white;
-      font-family: 'Anton', sans-serif;
-      font-size: 20px;
-      text-align: center;
-      padding: 20px;
-  }
-  
-  .tituloAdic {
-      letter-spacing: 5px;
-      font-size: 26px;
-  }
-  
-  .imgTam {
-      width: $tamanio;
-      height: $tamanio;
-      object-fit: cover;
-  }
-  
-  @media screen and (max-width:980px) {
-      .mainIndex {
-          grid-template-columns: 50% 50%;
-          grid-template-rows: repeat(5, fr);
-          grid-template-areas: "caja1 caja1" "imgSemanal imgSemanal" "vidElecci vidElecci""prodLista prodLista""titulo1 titulo1""caja3 caja3""caja4 caja4";
-      }
-  }
-  
-  @media screen and (max-width:960px) {
-      .mainProducs {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr;
-      }
-  }
-  
-  @media screen and (max-width:960px) {
-      .mainProd {
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr;
-      }
-  }
-  
-  @media screen and (max-width:960px) {
-      .mainNove {
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr;
-      }
-  }
-  
-  @media screen and (max-width:960px) {
-      .mainComunity {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr;
-      }
-  }
-  
-  @media screen and (max-width:960px) {
-      .galerCom {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr;
-      }
-  }
-  
-  @media screen and (max-width:960px) {
-      .mainRank {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr;
-      }
-  }
-  
-  @media screen and (max-width:960px) {
-      nav ul {
-          display: none;
-      }
-      nav {
-          width: 100%;
-      }
-  }
+@import "variables";
+@import "body";
+@import "header";
+@import "main";
+@import "footer";
+.tituloAdic {
+    letter-spacing: 5px;
+    font-size: 26px;
+}
+
+//Aplicando FullResponsive Pagina Index
+@media screen and (max-width:980px) {
+    .mainIndex {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(7, fr);
+        grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad01""producBuscad02 producBuscad02""titulo02 titulo02""secc4 secc4""secc5 secc5";
+    }
+}
+
+//Fin de aplicando FullResponsive Pagina Index
+//Aplicando FullResponsive Pagina Producto
+@media screen and (max-width:960px) {
+    .mainProducs {
+        grid-template-columns: fr;
+        grid-template-rows: fr fr fr;
+        grid-template-areas: "carrouselConta carrouselConta" "navinterProd navinterProd" "mainProd mainProd";
+        .carrouselConta {
+            width: 100%;
+            padding: 0px;
+            .apareceTexto {
+                font-size: 24px;
+            }
+        }
+        .navinterProd {
+            position: relative;
+        }
+        .mainProd {
+            .itemProducto {
+                width: 50%;
+            }
+        }
+    }
+} //fin FullResponsive pagina Producto
+@media screen and (max-width:960px) {
+    .mainComunity {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .galerCom {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+//Aplicando full responsive para el navegador
+@media screen and (max-width:960px) {
+    header nav {
+        display: none;
+    }
+    header .menuRespons {
+        display: inline;
+        padding: 10px;
+        &:after {
+            nav {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+//fin de Aplicando full responsive para el navegador

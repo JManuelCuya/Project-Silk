@@ -5,27 +5,76 @@ body {
     .banner {
         width: 80%;
         padding: 20px;
-        .apareceTexto {
-            position: absolute;
-            padding: 40px;
-            font-size: 72px;
-            z-index: 1;
-            font-family: 'Anton', sans-serif;
+    }
+    .irForobtn {
+        width: 50%;
+    }
+}
+
+@mixin contenedorProducto {
+    width: 25%;
+    height: auto;
+    background-color: #fff;
+    border: 0.9px solid #000000;
+}
+
+@mixin etiquetasNav {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    &:hover {
+        color: inherit;
+    }
+}
+
+@mixin productosAltaDemanda {
+    .prodLista {
+        width: $tamanio;
+        .itemProd {
+            display: flex;
+            width: 100%;
+            padding: 15px;
+            height: 650px;
+            background-color: #2c3e50;
+            border: 2px solid;
+            .imgTam {
+                width: 50%;
+                height: $tamanio;
+                object-fit: cover;
+                border: 5px solid;
+            }
+            .descripProd {
+                display: grid;
+                place-items: center;
+                margin: 20px;
+                width: 100%;
+                .tituVenta {
+                    @include titulosSeccion;
+                }
+                .btnProd {
+                    @include enfatizarTexto;
+                    width: 80%;
+                    padding: 20px;
+                    margin: auto;
+                }
+            }
         }
-        .animacionapar {
-            animation-duration: 8s;
-            animation-name: animacionapar;
-            animation-iteration-count: 1;
-        }
     }
-    .subirImg {
-        background-color: yellow;
-        text-align: center;
-        color: black;
-    }
-    .contRanking {
-        margin: 40px;
-    }
+}
+
+@mixin imgProducto {
+    width: 100%;
+    height: auto;
+}
+
+@mixin textoArticulos {
+    color: $cl_letra;
+}
+
+@mixin textoVenta {
+    color: black;
 }
 
 @mixin titulosSeccion {
@@ -38,6 +87,14 @@ body {
     width: 100%;
 }
 
+@mixin titulos {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
 @mixin enfatizarTexto {
     font-size: 24px;
     font-family: 'Mochiy Pop P One', sans-serif;
@@ -47,11 +104,6 @@ body {
 @mixin fondoTitulos {
     background-color: #0cbaba;
     background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-}
-
-@mixin textoDecor {
-    text-align: center;
-    color: white;
 }
 
 @keyframes animacionapar {
