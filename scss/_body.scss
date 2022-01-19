@@ -22,10 +22,26 @@ body {
     text-decoration: none;
     color: white;
     padding: 20px;
-    font-family: 'Anton', sans-serif;
+    font-family: $tipo_letra;
     font-size: 20px;
     &:hover {
         color: inherit;
+    }
+}
+
+@mixin imagenComunidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    .imgCom {
+        width: 80%;
+        height: $tamanio;
+        margin: auto;
+        padding: 20px;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.8s;
+        }
     }
 }
 

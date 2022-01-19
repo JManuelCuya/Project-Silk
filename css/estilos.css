@@ -41,7 +41,7 @@ header {
         text-decoration: none;
         color: white;
         padding: 20px;
-        font-family: 'Anton', sans-serif;
+        font-family: "Anton", sans-serif;
         font-size: 20px; }
         header nav ul a:hover {
           color: inherit; }
@@ -235,7 +235,7 @@ header {
       z-index: 1;
       padding: 40px;
       font-size: 72px;
-      font-family: 'Anton', sans-serif; }
+      font-family: "Anton", sans-serif; }
     .mainProducs .carrouselConta .animacionapar {
       animation-duration: 8s;
       animation-name: animacionapar;
@@ -259,7 +259,7 @@ header {
         text-decoration: none;
         color: white;
         padding: 20px;
-        font-family: 'Anton', sans-serif;
+        font-family: "Anton", sans-serif;
         font-size: 20px; }
         .mainProducs .navinterProd .itemNav a:hover {
           color: inherit; }
@@ -287,58 +287,165 @@ header {
 
 .mainContComu {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-  gap: 5px; }
-  .mainContComu .contComunit {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto; }
-    .mainContComu .contComunit .textoContenido {
-      color: #ffffff; }
-    .mainContComu .contComunit .subtituloComun {
-      color: white;
-      font-family: 'Anton', sans-serif;
-      font-size: 20px;
-      text-align: center;
-      padding: 20px;
-      font-size: 24px;
-      font-family: 'Mochiy Pop P One', sans-serif;
-      font-weight: bold;
-      padding: 0;
-      margin: 0; }
-  .mainContComu .subirImg {
-    background-color: #252c33;
-    font-family: 'Sniglet', cursive;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-    font-size: 24px;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-weight: bold;
+  grid-template-columns: fr fr;
+  grid-template-rows: repeat(7, fr);
+  grid-template-areas: "gr1 gr1" "contenedorTexto contenedorTexto" "contenEnviarFoto contenEnviarFoto" "postularSemanal postularSemanal" "campComentario campComentario" "anuncioSemanal anuncioSemanal" "contComunit contComunit";
+  gap: 5px;
+  width: 100%; }
+  .mainContComu .gr1 {
     text-align: center;
+    grid-area: gr1;
     padding: 20px; }
+    .mainContComu .gr1 h3 {
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase; }
   .mainContComu .contenedorTexto {
-    width: 99%;
+    width: 100%;
     padding: 20px;
-    margin: 10px;
-    background-color: #2c3e50; }
-  .mainContComu .galerCom {
+    background-color: #2c3e50;
+    grid-area: contenedorTexto; }
+    .mainContComu .contenedorTexto .textoContenido {
+      color: #ffffff; }
+  .mainContComu .contenEnviarFoto {
+    width: 100%;
+    padding: 20px;
+    background-color: #2c3e50;
+    grid-area: contenEnviarFoto; }
+    .mainContComu .contenEnviarFoto .textoContenido {
+      color: #ffffff; }
+  .mainContComu .postularSemanal {
+    grid-area: postularSemanal;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    width: 100%; }
+    .mainContComu .postularSemanal .conteEnvi {
+      width: 50%;
+      margin: auto; }
+    .mainContComu .postularSemanal p {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase; }
+  .mainContComu .campComentario {
+    grid-area: campComentario;
+    width: 70%;
+    margin: auto;
+    padding: 20px; }
+    .mainContComu .campComentario p {
+      color: #ffffff; }
+  .mainContComu .anuncioSemanal {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; }
-    .mainContComu .galerCom .imgCom {
-      width: 80%;
-      height: 100%;
-      margin: auto;
+    grid-template-columns: fr fr;
+    grid-template-rows: auto;
+    grid-template-areas: "anuncioTorneo anuncioTorneo" "avisoTorneo avisoTorneo" "avisoTorneo2 avisoTorneo2" "contTable contTable";
+    width: 100%; }
+    .mainContComu .anuncioSemanal .anuncioTorneo {
+      grid-area: anuncioTorneo;
+      width: 100%;
+      text-align: center; }
+      .mainContComu .anuncioSemanal .anuncioTorneo h3 {
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase; }
+      .mainContComu .anuncioSemanal .anuncioTorneo p {
+        color: #ffffff; }
+    .mainContComu .anuncioSemanal .avisoTorneo {
+      width: 100%;
+      grid-area: avisoTorneo;
       padding: 20px; }
-      .mainContComu .galerCom .imgCom:hover {
-        transform: scale(1.1);
-        transition: all 0.8s; }
+      .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo {
+        width: 100%;
+        text-align: left; }
+        .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo h3 {
+          color: #0eb398;
+          font-size: 2rem;
+          font-family: "Anton", sans-serif; }
+        .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo p {
+          color: #ffffff; }
+      .mainContComu .anuncioSemanal .avisoTorneo .conteTorn {
+        display: flex; }
+        .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo {
+          width: 100%;
+          margin: 20px; }
+          .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo img {
+            width: 100%; }
+          .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 {
+            background-color: #2c3e50; }
+            .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 p {
+              margin: 5px;
+              padding: 5px;
+              color: #ffffff; }
+          .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo:hover {
+            opacity: 0.6;
+            transform: scale(1.1);
+            transition: all 0.8s; }
+    .mainContComu .anuncioSemanal .avisoTorneo2 {
+      width: 100%;
+      grid-area: avisoTorneo2;
+      padding: 20px; }
+      .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo {
+        width: 100%;
+        text-align: left; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo h3 {
+          color: #0eb398;
+          font-size: 2rem;
+          font-family: "Anton", sans-serif; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo p {
+          color: #ffffff; }
+      .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn {
+        display: flex; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo {
+          width: 100%;
+          margin: 20px; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo img {
+            width: 100%; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 {
+            background-color: #2c3e50;
+            width: 100%; }
+            .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 p {
+              margin: 5px;
+              padding: 5px;
+              color: #ffffff; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo:hover {
+            opacity: 0.6;
+            transform: scale(1.1);
+            transition: all 0.8s; }
+    .mainContComu .anuncioSemanal .contTable {
+      width: 100%;
+      grid-area: contTable; }
+      .mainContComu .anuncioSemanal .contTable h3 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase; }
+  .mainContComu .contComunit {
+    width: 100%;
+    grid-area: contComunit; }
+    .mainContComu .contComunit .decripCaptu {
+      width: 100%; }
+      .mainContComu .contComunit .decripCaptu h3 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase; }
+    .mainContComu .contComunit .conteTorn {
+      display: flex; }
+      .mainContComu .contComunit .conteTorn .contCap {
+        margin: 20px; }
+        .mainContComu .contComunit .conteTorn .contCap img {
+          width: 100%; }
 
 .mainRegistro {
   background-image: url(../images/fondoregis.jpg);

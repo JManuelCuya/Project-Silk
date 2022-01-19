@@ -31,135 +31,189 @@
     </header>
 
     <main class="mainContComu">
-        <section class="contComunit ">
-            <div class="subirImg">
-                <h3 class="subtituloComun animate__animated animate__bounce">Lo mejor</h3>
-            </div>
-
-            <div class="contenedorTexto">
-                <p class="textoContenido">Podrás postular con una imagen que refleje los mejores escenarios de tu juego favorito. Además, encontraras consejos de jugadores veteranos e informarte de eventos realizados por algún juego que te interese con los foros que se actualizan
-                    cada semana.
-                </p>
-            </div>
-            <div class="contenedorTexto">
-                <p class="textoContenido">Como enviar tu foto elegida: </p>
-                <p class="textoContenido"> Paso 1 - Subir tu imagen en el botón que esta debajo de este anuncio. </p>
-                <p class="textoContenido"> Paso 2 - Enviar el nombre de tu imagen y Nickname a nuestro correo.</p>
-            </div>
-            <p class="subirImg ">Sube tu Imagen aqui para postular a la imagen semanal</p>
-            <div class="mb-3">
+        <!--Grid 1-->
+        <div class="gr1">
+            <h3 class="animate__animated animate__bounce">Actividad de la Comunidad</h3>
+        </div>
+        <!--Grid 2-->
+        <div class="contenedorTexto">
+            <p class="textoContenido">Podrás postular con una imagen que refleje los mejores escenarios de tu juego favorito. Además, encontraras consejos de jugadores veteranos e informarte de eventos realizados por algún juego que te interese con los foros que se actualizan
+                cada semana.
+            </p>
+        </div>
+        <!--Grid 3-->
+        <div class="contenEnviarFoto">
+            <p class="textoContenido">Como enviar tu foto elegida: </p>
+            <p class="textoContenido"> Paso 1 - Subir tu imagen en el botón que esta debajo de este anuncio. </p>
+            <p class="textoContenido"> Paso 2 - Enviar el nombre de tu imagen y Nickname a nuestro correo.</p>
+        </div>
+        <!--Grid 4-->
+        <div class="postularSemanal">
+            <p>Sube tu Imagen aqui para postular a la imagen semanal</p>
+            <div class="mb-3 conteEnvi">
                 <input class="form-control" type="file" id="formFile">
             </div>
-            <label class="textocomun ">Dejanos tus comentario para seguir mejorando!</label>
+        </div>
+        <!--Grid 5-->
+        <div class="campComentario">
+            <p>Dejanos tus comentario para seguir mejorando!</p>
             <textarea class="form-control " placeholder="Dejanos tu comentario aqui!" id="floatingTextarea2 " style="height: 100px "></textarea>
-        </section>
-        <section class="contComunit">
-            <div class="subirImg">
-                <h3 class="subtituloComun animate__animated animate__bounce">Torneos</h3>
-                <p class="subirImg ">Participa en los torneos de la Valorant Champions Tour en Latinoamérica.</p>
+        </div>
+        <!--Grid 6-->
+        <!--Comienza otro Grid-->
+        <section class="anuncioSemanal">
+            <!--Titulo de la seccion-->
+            <div class="anuncioTorneo">
+                <h3>Torneos</h3>
+                <p> Participa en los torneos de la Valorant Champions Tour en Latinoamérica.</p>
             </div>
-            <section class="contComunit">
-
-                <p class="subirImg ">OPEN QUALIFIERS - VALORANT CHALLENGERS ¿Sueñas con representar a LATAM? Acá comienza tu camino a la gloria, compite contra equipos de toda la región por un cupo a la máxima competencia de Valorant</p>
-                <div class="galerCom ">
-                    <img class="imgCom" src="../images/comunidad/imgpromo1.jpg " alt="promo1">
-                    <img class="imgCom" src="../images/comunidad/imgpromo2.jpg " alt="promo2">
+            <!--Primeros dos tipos de torneo-->
+            <div class="avisoTorneo">
+                <div class="tipoTorneo">
+                    <h3>OPEN QUALIFIERS - VALORANT CHALLENGERS</h3>
+                    <p>¿Sueñas con representar a LATAM? Acá comienza tu camino a la gloria, compite contra equipos de toda la región por un cupo a la máxima competencia de Valorant</p>
                 </div>
-                <p class="subirImg ">OPEN QUALIFIERS - VALORANT GAME CHANGERS Se comienza a escribir un nuevo capitulo en el competitivo de Valorant ¿Formarás parte? Arma tu equipo y compite contra las mejores jugadoras de todo LATAM</p>
-                <div class="galerCom ">
-                    <img class="imgCom" src="../images/comunidad/imgpromo3.jpg " alt="promo3">
-                    <img class="imgCom" src="../images/comunidad/imgpromo4.jpg " alt="promo4">
+                <div class="conteTorn">
+                    <div class="itemTorneo">
+                        <a href="https://valorantchampions.lat/landing/game-challengers-region-norte" target="_blank"><img src="../images/comunidad/imgpromo1.jpg " alt="promo1"></a>
+                        <div class="descripTorneo1">
+                            <p>Region Norte</p>
+                            <p>Open Qualifiers ¡Participa Aquí!</p>
+                        </div>
+                    </div>
+                    <div class="itemTorneo">
+                        <a href="https://valorantchampions.lat/landing/game-challengers-region-sur" target="_blank"><img src="../images/comunidad/imgpromo2.jpg " alt="promo2"></a>
+                        <div class="descripTorneo1">
+                            <p>Region Sur</p>
+                            <p>Open Qualifiers ¡Participa Aquí!</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </section>
-        <section class="contComunit">
-            <div class="subirImg">
-                <h3 class="subtituloComun animate__animated animate__swing">Mejores Consejos:</h3>
             </div>
-            <div class="contRanking">
-                <table class="table table-dark table-striped">
+            <!--Segundo dos tipos de torneo-->
+            <div class="avisoTorneo2">
+                <div class="tipoTorneo">
+                    <h3>OPEN QUALIFIERS - VALORANT GAME CHANGERS</h3>
+                    <p> Se comienza a escribir un nuevo capitulo en el competitivo de Valorant ¿Formarás parte? Arma tu equipo y compite contra las mejores jugadoras de todo LATAM</p>
+                </div>
+                <div class="conteTorn">
+                    <div class="itemTorneo">
+                        <a href="https://valorantchampions.lat/landing/game-changers-region-norte" target="_blank"><img src="../images/comunidad/imgpromo3.jpg " alt="promo1"></a>
+                        <div class="descripTorneo1">
+                            <p>Region Norte</p>
+                            <p>Open Qualifiers ¡Participa Aquí!</p>
+                        </div>
+                    </div>
+                    <div class="itemTorneo">
+                        <a href="https://valorantchampions.lat/landing/game-changers-region-sur" target="_blank"><img src="../images/comunidad/imgpromo4.jpg " alt="promo1"></a>
+                        <div class="descripTorneo1">
+                            <p>Region Sur</p>
+                            <p>Open Qualifiers ¡Participa Aquí!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contTable">
+                <h3 class="animate__animated animate__swing ">Mejores Consejos - guias</h3>
+                <table class="table table-dark table-striped ">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Fecha</th>
-                            <th scope="col">Nickname</th>
-                            <th scope="col">Ir al foro</th>
+                            <th scope="col ">#</th>
+                            <th scope="col ">Nombre</th>
+                            <th scope="col ">Fecha</th>
+                            <th scope="col ">Juego</th>
+                            <th scope="col ">Descripcion</th>
+                            <th scope="col ">Ir al foro</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td width="118.22px" height="50px"><img class="irForobtn" src="../images/irforo.png" alt="go"></td>
+                            <th scope="row ">1</th>
+                            <td>Belis</td>
+                            <td>08/01/2022</td>
+                            <td>Aimlab</td>
+                            <td>Rutina Actualizada</td>
+                            <td width="118.22px " height="50px "><img class="irForobtn " src="../images/irforo.png " alt="go "></td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Thornton</td>
-                            <td width="118.22px"><img class="irForobtn" src="../images/irforo.png" alt="go"></td>
+                            <th scope="row ">2</th>
+                            <td>El Mas Malo</td>
+                            <td>08/01/2022</td>
+                            <td>Genshin Impact</td>
+                            <td>Nuevas Actualzaciones</td>
+                            <td width="118.22px "><img class="irForobtn " src="../images/irforo.png " alt="go "></td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td width="118.22px"><img class="irForobtn" src="../images/irforo.png" alt="go"></td>
+                            <th scope="row ">3</th>
+                            <td>El Gankeador</td>
+                            <td>08/01/2022</td>
+                            <td>Valorant</td>
+                            <td>Nuevas Actualzaciones</td>
+                            <td width="118.22px "><img class="irForobtn " src="../images/irforo.png " alt="go "></td>
+                        </tr>
+                        <tr>
+                            <th scope="row ">4</th>
+                            <td>Survivor</td>
+                            <td>08/01/2022</td>
+                            <td>Apex of Legends</td>
+                            <td>Nuevas Combinaciones</td>
+                            <td width="118.22px "><img class="irForobtn " src="../images/irforo.png " alt="go "></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-        <section class="contComunit">
-            <div class="subirImg">
-                <h3 class="subtituloComun animate__animated animate__swing ">Mejor Captura</h3>
+        <section class="contComunit ">
+            <div class="decripCaptu">
+                <h3 class="animate__animated animate__swing ">capturas ganadoras</h3>
             </div>
-
-            <div class="galerCom ">
-                <img class="imgCom" src="../images/imgcomu2.jpg " alt=" ">
-                <img class="imgCom" src="../images/imgcomu1.jpg " alt=" ">
+            <div class="conteTorn">
+                <div class="contCap ">
+                    <img src="../images/comunidad/capturaSemanal1.jpg " alt=" ">
+                </div>
+                <div class="contCap ">
+                    <img src="../images/comunidad/capturaSemanal2.jpg " alt=" ">
+                </div>
+            </div>
+            <div class="conteTorn ">
+                <div class="contCap ">
+                    <img src="../images/comunidad/capturaSemanal3.jpg " alt=" ">
+                </div>
+                <div class="contCap ">
+                    <img src="../images/comunidad/capturaSemanal4.jpg " alt=" ">
+                </div>
             </div>
         </section>
-
-
-
     </main>
 
     <!--FIN DEL BODY-->
     <!--COMIENZO DEL PIE DE PAGINA-->
     <footer>
 
-        <h3 class="text-center">Nuestras redes sociales:</h3>
+        <h3 class="text-center ">Nuestras redes sociales:</h3>
         <div class="ulredes ">
-            <div class="itemredes">
-                <img class="iconsRedes" src="../images/facebook.png">
+            <div class="itemredes ">
+                <img class="iconsRedes " src="../images/redSocial/facebook.png ">
             </div>
-            <div class="itemredes">
-                <img class="iconsRedes" src="../images/youtube.png">
+            <div class="itemredes ">
+                <img class="iconsRedes " src="../images/redSocial/youtube.png ">
             </div>
-            <div class="itemredes">
-                <img class="iconsRedes" src="../images/gorjeo.png">
+            <div class="itemredes ">
+                <img class="iconsRedes " src="../images/redSocial/twitter.png">
             </div>
-            <div class="itemredes">
-                <img class="iconsRedes" src="../images/instagram.png">
+            <div class="itemredes ">
+                <img class="iconsRedes " src="../images/redSocial/instagram.png ">
             </div>
         </div>
-
-
-
-        <p class="textofooter"> Copyright © Todos los derechos reservados</p>
-
+        <p class="textofooter "> Copyright © Todos los derechos reservados</p>
         <ul>
-            <li><a href="">Politicas</a></li>
-            <li><a href="">Privacidad</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href=" ">Politicas</a></li>
+            <li><a href=" ">Privacidad</a></li>
+            <li><a href=" ">Contacto</a></li>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
 </body>
 
 </html>
