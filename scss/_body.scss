@@ -11,6 +11,30 @@ body {
     }
 }
 
+//Navegador de Categorias
+@mixin navCategoriasProducto {
+    background-image: url(../images/fondoProd.jpg);
+    width: 80%;
+    grid-area: navinterProd;
+    z-index: inherit;
+    .itemNav {
+        width: 100%;
+        display: inline-block;
+        padding: 20px;
+        list-style: none;
+        .cateNav {
+            width: 100%;
+            padding: 20px;
+            &:hover {
+                background-color: red;
+            }
+        }
+        a {
+            @include etiquetasNav;
+        }
+    }
+}
+
 @mixin contenedorProducto {
     width: 25%;
     height: auto;
@@ -23,7 +47,8 @@ body {
     color: white;
     padding: 20px;
     font-family: $tipo_letra;
-    font-size: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
     &:hover {
         color: inherit;
     }
@@ -45,6 +70,15 @@ body {
     }
 }
 
+@mixin formtColorTitulos {
+    text-align: center;
+    color: $color_letra_torneo;
+    font-size: 4rem;
+    font-family: $tipo_letra;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
 @mixin productosAltaDemanda {
     .prodLista {
         width: $tamanio;
@@ -52,28 +86,28 @@ body {
             display: flex;
             width: 100%;
             padding: 15px;
-            height: 650px;
             background-color: #2c3e50;
             border: 2px solid;
             .imgTam {
-                width: 50%;
+                width: 70%;
                 height: $tamanio;
-                object-fit: cover;
                 border: 5px solid;
             }
             .descripProd {
-                display: grid;
                 place-items: center;
-                margin: 20px;
+                margin: 10px;
                 width: 100%;
                 .tituVenta {
                     @include titulosSeccion;
                 }
+                .plataformJuegos {
+                    @include titulosSeccion;
+                    margin: 0px 0px 10px 0px;
+                }
                 .btnProd {
-                    @include enfatizarTexto;
-                    width: 80%;
-                    padding: 20px;
-                    margin: auto;
+                    @include formtColorTitulos;
+                    font-size: 3rem;
+                    color: white;
                 }
             }
         }
@@ -95,7 +129,7 @@ body {
 
 @mixin titulosSeccion {
     background-color: #252c33;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Anton', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     color: $cl_letra;
@@ -103,23 +137,8 @@ body {
     width: 100%;
 }
 
-@mixin titulos {
-    color: white;
-    font-family: 'Anton', sans-serif;
-    font-size: 20px;
-    text-align: center;
+@mixin contenedorTitulos {
     padding: 20px;
-}
-
-@mixin enfatizarTexto {
-    font-size: 24px;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-weight: bold;
-}
-
-@mixin fondoTitulos {
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 
 @keyframes animacionapar {

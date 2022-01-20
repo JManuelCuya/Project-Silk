@@ -23,33 +23,37 @@ header {
   top: 0;
   z-index: 2;
   background-color: black;
-  border-bottom: 1px solid #968d8d; }
+  border-bottom: 1px solid #968d8d;
+  position: relative; }
   header .menuRespons {
     display: none; }
   header nav {
-    width: 80%; }
+    width: 80%;
+    margin: 0px; }
     header nav ul {
       display: flex;
       list-style: none; }
       header nav ul li {
         display: inline-block;
         padding: 20px; }
-        header nav ul li:hover {
-          background-color: #ffffff;
-          color: #000000; }
       header nav ul a {
         text-decoration: none;
         color: white;
         padding: 20px;
         font-family: "Anton", sans-serif;
-        font-size: 20px; }
+        font-size: 24px;
+        text-transform: uppercase; }
         header nav ul a:hover {
           color: inherit; }
+        header nav ul a:hover {
+          background-color: #ffffff;
+          color: #000000; }
   header .div-carr {
-    width: 20%;
     display: flex;
-    float: left;
-    margin: auto; }
+    padding: 25px;
+    bottom: 0;
+    right: 0;
+    position: absolute; }
     header .div-carr .iconoHeader {
       width: 100%; }
 
@@ -62,28 +66,46 @@ header {
   grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad02" "titulo02 titulo02" "secc4 secc5"; }
   .mainIndex .portadaIndex {
     width: 100%;
-    grid-area: portadaIndex; }
+    grid-area: portadaIndex;
+    position: relative; }
     .mainIndex .portadaIndex .imgSeleccionSemanal {
       width: 100%; }
-  .mainIndex .descripPort {
-    color: white;
-    position: absolute;
-    top: 0px 0px 1500px 1500px;
-    right: 0;
-    height: 100%;
-    width: 33%; }
+    .mainIndex .portadaIndex .descripPort {
+      padding: 150px;
+      bottom: 0;
+      right: 0;
+      position: absolute; }
+      .mainIndex .portadaIndex .descripPort h2 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: white; }
+      .mainIndex .portadaIndex .descripPort .btn {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: white; }
   .mainIndex .titulo01 {
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    padding: 20px;
     grid-area: titulo01;
     width: 100%;
     height: 100%; }
     .mainIndex .titulo01 .titulosIndex {
-      color: white;
-      font-family: 'Anton', sans-serif;
-      font-size: 20px;
       text-align: center;
-      padding: 20px; }
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 3rem; }
   .mainIndex .producBuscad01 {
     width: 100%;
     grid-area: producBuscad01; }
@@ -93,34 +115,42 @@ header {
         display: flex;
         width: 100%;
         padding: 15px;
-        height: 650px;
         background-color: #2c3e50;
         border: 2px solid; }
         .mainIndex .producBuscad01 .prodLista .itemProd .imgTam {
-          width: 50%;
+          width: 70%;
           height: 100%;
-          object-fit: cover;
           border: 5px solid; }
         .mainIndex .producBuscad01 .prodLista .itemProd .descripProd {
-          display: grid;
           place-items: center;
-          margin: 20px;
+          margin: 10px;
           width: 100%; }
           .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .tituVenta {
             background-color: #252c33;
-            font-family: 'Sniglet', cursive;
+            font-family: 'Anton', sans-serif;
             font-size: 16px;
             text-transform: uppercase;
             color: #ffffff;
             padding: 20px;
             width: 100%; }
-          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .btnProd {
-            font-size: 24px;
-            font-family: 'Mochiy Pop P One', sans-serif;
-            font-weight: bold;
-            width: 80%;
+          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .plataformJuegos {
+            background-color: #252c33;
+            font-family: 'Anton', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
             padding: 20px;
-            margin: auto; }
+            width: 100%;
+            margin: 0px 0px 10px 0px; }
+          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .btnProd {
+            text-align: center;
+            color: #0eb398;
+            font-size: 4rem;
+            font-family: "Anton", sans-serif;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: white; }
   .mainIndex .producBuscad02 {
     width: 100%;
     grid-area: producBuscad02; }
@@ -130,45 +160,54 @@ header {
         display: flex;
         width: 100%;
         padding: 15px;
-        height: 650px;
         background-color: #2c3e50;
         border: 2px solid; }
         .mainIndex .producBuscad02 .prodLista .itemProd .imgTam {
-          width: 50%;
+          width: 70%;
           height: 100%;
-          object-fit: cover;
           border: 5px solid; }
         .mainIndex .producBuscad02 .prodLista .itemProd .descripProd {
-          display: grid;
           place-items: center;
-          margin: 20px;
+          margin: 10px;
           width: 100%; }
           .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .tituVenta {
             background-color: #252c33;
-            font-family: 'Sniglet', cursive;
+            font-family: 'Anton', sans-serif;
             font-size: 16px;
             text-transform: uppercase;
             color: #ffffff;
             padding: 20px;
             width: 100%; }
-          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .btnProd {
-            font-size: 24px;
-            font-family: 'Mochiy Pop P One', sans-serif;
-            font-weight: bold;
-            width: 80%;
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .plataformJuegos {
+            background-color: #252c33;
+            font-family: 'Anton', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
             padding: 20px;
-            margin: auto; }
+            width: 100%;
+            margin: 0px 0px 10px 0px; }
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .btnProd {
+            text-align: center;
+            color: #0eb398;
+            font-size: 4rem;
+            font-family: "Anton", sans-serif;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: white; }
   .mainIndex .titulo02 {
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    padding: 20px;
     width: 100%;
     grid-area: titulo02; }
     .mainIndex .titulo02 .titulosIndex {
-      color: white;
-      font-family: 'Anton', sans-serif;
-      font-size: 20px;
       text-align: center;
-      padding: 20px; }
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 3rem; }
   .mainIndex .secc4 {
     grid-area: secc4;
     width: 100%;
@@ -179,7 +218,7 @@ header {
       width: 100%; }
       .mainIndex .secc4 .descripProd .tituVenta {
         background-color: #252c33;
-        font-family: 'Sniglet', cursive;
+        font-family: 'Anton', sans-serif;
         font-size: 16px;
         text-transform: uppercase;
         color: #ffffff;
@@ -196,7 +235,7 @@ header {
       width: 100%; }
       .mainIndex .secc5 .descripProd .tituVenta {
         background-color: #252c33;
-        font-family: 'Sniglet', cursive;
+        font-family: 'Anton', sans-serif;
         font-size: 16px;
         text-transform: uppercase;
         color: #ffffff;
@@ -219,6 +258,154 @@ header {
 .imgCarro {
   border-radius: 15px;
   padding: 5px; }
+
+.mainVentas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: fr fr;
+  grid-template-areas: "navinterProd mainProd"; }
+  .mainVentas .navinterProd {
+    background-image: url(../images/fondoProd.jpg);
+    width: 80%;
+    grid-area: navinterProd;
+    z-index: inherit; }
+    .mainVentas .navinterProd .itemNav {
+      width: 100%;
+      display: inline-block;
+      padding: 20px;
+      list-style: none; }
+      .mainVentas .navinterProd .itemNav .cateNav {
+        width: 100%;
+        padding: 20px; }
+        .mainVentas .navinterProd .itemNav .cateNav:hover {
+          background-color: red; }
+      .mainVentas .navinterProd .itemNav a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-family: "Anton", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase; }
+        .mainVentas .navinterProd .itemNav a:hover {
+          color: inherit; }
+  .mainVentas .mainProd {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: mainProd;
+    padding: 15px;
+    width: 100%; }
+    .mainVentas .mainProd h3 {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 5px;
+      width: 100%;
+      padding: 20px; }
+    .mainVentas .mainProd .itemProducto {
+      width: 25%;
+      height: auto;
+      background-color: #fff;
+      border: 0.9px solid #000000;
+      margin: 10px;
+      width: 31%;
+      border-radius: 20px; }
+      .mainVentas .mainProd .itemProducto:hover {
+        transform: scale(1.1);
+        transition: all 0.8s;
+        z-index: 1; }
+      .mainVentas .mainProd .itemProducto .imgTam {
+        width: 100%;
+        height: auto;
+        border-radius: 20px; }
+      .mainVentas .mainProd .itemProducto .descripJuego {
+        padding: 20px;
+        background-color: #2c3e50;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px; }
+        .mainVentas .mainProd .itemProducto .descripJuego .textoProducto {
+          color: black;
+          color: #ffffff; }
+        .mainVentas .mainProd .itemProducto .descripJuego .precioPerifericos {
+          margin: auto;
+          width: 40%;
+          padding: 10px;
+          background-color: #3d8fe2;
+          border-radius: 20px; }
+    .mainVentas .mainProd .conteBanner {
+      width: 100%;
+      display: flex; }
+      .mainVentas .mainProd .conteBanner img {
+        width: 48%;
+        margin: 10px;
+        border: 1px solid white; }
+
+.mainVenta {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: fr fr;
+  grid-template-areas: "navinterProd mainProd"; }
+  .mainVenta .navinterProd {
+    background-image: url(../images/fondoProd.jpg);
+    width: 80%;
+    grid-area: navinterProd;
+    z-index: inherit; }
+    .mainVenta .navinterProd .itemNav {
+      width: 100%;
+      display: inline-block;
+      padding: 20px;
+      list-style: none; }
+      .mainVenta .navinterProd .itemNav .cateNav {
+        width: 100%;
+        padding: 20px; }
+        .mainVenta .navinterProd .itemNav .cateNav:hover {
+          background-color: red; }
+      .mainVenta .navinterProd .itemNav a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-family: "Anton", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase; }
+        .mainVenta .navinterProd .itemNav a:hover {
+          color: inherit; }
+  .mainVenta .mainProd {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: mainProd;
+    padding: 40px;
+    width: 100%; }
+    .mainVenta .mainProd h3 {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 5px;
+      width: 100%;
+      padding: 20px; }
+    .mainVenta .mainProd .itemProducto {
+      width: 25%;
+      height: auto;
+      background-color: #fff;
+      border: 0.9px solid #000000;
+      width: 50%; }
+      .mainVenta .mainProd .itemProducto:hover {
+        transform: scale(1.1);
+        transition: all 0.8s;
+        z-index: 1; }
+      .mainVenta .mainProd .itemProducto .imgTam {
+        width: 100%;
+        height: auto; }
+      .mainVenta .mainProd .itemProducto .descripJuego {
+        padding: 20px; }
+        .mainVenta .mainProd .itemProducto .descripJuego .textoProducto {
+          color: black; }
 
 .mainProducs {
   width: 100%;
@@ -260,7 +447,8 @@ header {
         color: white;
         padding: 20px;
         font-family: "Anton", sans-serif;
-        font-size: 20px; }
+        font-size: 24px;
+        text-transform: uppercase; }
         .mainProducs .navinterProd .itemNav a:hover {
           color: inherit; }
   .mainProducs .mainProd {
@@ -297,6 +485,7 @@ header {
     grid-area: gr1;
     padding: 20px; }
     .mainContComu .gr1 h3 {
+      text-align: center;
       color: #0eb398;
       font-size: 4rem;
       font-family: "Anton", sans-serif;
@@ -350,6 +539,7 @@ header {
       width: 100%;
       text-align: center; }
       .mainContComu .anuncioSemanal .anuncioTorneo h3 {
+        text-align: center;
         color: #0eb398;
         font-size: 4rem;
         font-family: "Anton", sans-serif;
@@ -480,24 +670,33 @@ footer {
   footer .textofooter {
     text-align: center; }
   footer .ulredes {
-    width: 10%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     margin: auto;
-    column-gap: 5px; }
+    padding: 20px;
+    column-gap: 15px; }
     footer .ulredes .itemredes {
-      width: 50%;
-      transition: height 2s; }
+      width: 100%; }
       footer .ulredes .itemredes .iconsRedes {
-        width: 90%;
-        transform: scale 2s; }
+        width: 100%;
+        transition: transform .2s; }
+        footer .ulredes .itemredes .iconsRedes:hover {
+          opacity: 0.7;
+          transform: scale(1.3); }
   footer ul li {
     padding: 15px;
     list-style: none; }
     footer ul li a {
-      margin: 20px;
       text-decoration: none;
-      color: inherit; }
+      color: white;
+      padding: 20px;
+      font-family: "Anton", sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-size: 24px; }
+      footer ul li a:hover {
+        color: inherit; }
 
 .tituloAdic {
   letter-spacing: 5px;

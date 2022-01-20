@@ -9,43 +9,56 @@
     .portadaIndex {
         width: 100%;
         grid-area: portadaIndex;
+        position: relative;
         .imgSeleccionSemanal {
             width: $tamanio;
         }
-    }
-    .descripPort {
-        color: white;
-        position: absolute;
-        top: 0px 0px 1500px 1500px;
-        right: 0;
-        height: 100%;
-        width: 33%;
+        .descripPort {
+            padding: 150px;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            h2 {
+                @include formtColorTitulos;
+                font-size: 3rem;
+                color: white;
+            }
+            .btn {
+                @include formtColorTitulos;
+                font-size: 3rem;
+                color: white;
+            }
+        }
     }
     .titulo01 {
-        @include fondoTitulos;
+        @include contenedorTitulos;
         grid-area: titulo01;
         width: $tamanio;
         height: 100%;
         .titulosIndex {
-            @include titulos;
+            @include formtColorTitulos;
+            font-size: 3rem;
         }
     }
+    //Descuento de la semana
     .producBuscad01 {
         width: $tamanio;
         grid-area: producBuscad01;
         @include productosAltaDemanda;
     }
+    //Juego de la semana
     .producBuscad02 {
         width: $tamanio;
         grid-area: producBuscad02;
         @include productosAltaDemanda;
     }
     .titulo02 {
-        @include fondoTitulos;
+        @include contenedorTitulos;
         width: 100%;
         grid-area: titulo02;
         .titulosIndex {
-            @include titulos;
+            @include formtColorTitulos;
+            font-size: 3rem;
         }
     }
     .secc4 {
@@ -100,7 +113,118 @@
     padding: 5px;
 }
 
-//Empieza Productos//
+//Ventas Accesorios//
+.mainVentas {
+    width: $tamanio;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: fr fr;
+    grid-template-areas: "navinterProd mainProd";
+    .navinterProd {
+        @include navCategoriasProducto;
+    }
+    //fin de navegador
+    //inicio de la galeria
+    .mainProd {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: mainProd;
+        padding: 15px;
+        width: 100%;
+        h3 {
+            @include formtColorTitulos;
+            margin: 5px;
+            width: 100%;
+            padding: 20px;
+        }
+        .itemProducto {
+            @include contenedorProducto;
+            margin: 10px;
+            width: 31%;
+            border-radius: 20px;
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.8s;
+                z-index: 1;
+            }
+            .imgTam {
+                @include imgProducto;
+                border-radius: 20px;
+            }
+            .descripJuego {
+                padding: 20px;
+                background-color: #2c3e50;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                .textoProducto {
+                    @include textoVenta;
+                    color: $cl_letra;
+                }
+                .precioPerifericos {
+                    margin: auto;
+                    width: 40%;
+                    padding: 10px;
+                    background-color: #3d8fe2;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .conteBanner {
+            width: 100%;
+            display: flex;
+            img {
+                width: 48%;
+                margin: 10px;
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
+//Ventas Setup//
+.mainVenta {
+    width: $tamanio;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: fr fr;
+    grid-template-areas: "navinterProd mainProd";
+    .navinterProd {
+        @include navCategoriasProducto;
+    }
+    .mainProd {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: mainProd;
+        padding: 40px;
+        width: 100%;
+        h3 {
+            @include formtColorTitulos;
+            margin: 5px;
+            width: 100%;
+            padding: 20px;
+        }
+        .itemProducto {
+            @include contenedorProducto;
+            width: 50%;
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.8s;
+                z-index: 1;
+            }
+            .imgTam {
+                @include imgProducto;
+            }
+            .descripJuego {
+                padding: 20px;
+                .textoProducto {
+                    @include textoVenta;
+                }
+            }
+        }
+    }
+}
+
+//Pagina Principal Producto
 .mainProducs {
     width: $tamanio;
     display: grid;
@@ -185,11 +309,7 @@
         grid-area: gr1;
         padding: 20px;
         h3 {
-            color: $color_letra_torneo;
-            font-size: 4rem;
-            font-family: $tipo_letra;
-            line-height: 1;
-            text-transform: uppercase;
+            @include formtColorTitulos;
         }
     }
     .contenedorTexto {
@@ -221,12 +341,7 @@
             margin: auto;
         }
         p {
-            text-align: center;
-            color: $color_letra_torneo;
-            font-size: 4rem;
-            font-family: $tipo_letra;
-            line-height: 1;
-            text-transform: uppercase;
+            @include formtColorTitulos;
         }
     }
     .campComentario {
@@ -249,11 +364,7 @@
             width: 100%;
             text-align: center;
             h3 {
-                color: $color_letra_torneo;
-                font-size: 4rem;
-                font-family: $tipo_letra;
-                line-height: 1;
-                text-transform: uppercase;
+                @include formtColorTitulos;
             }
             p {
                 color: $cl_letra;
