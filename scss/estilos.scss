@@ -14,6 +14,79 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(7, fr);
         grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad01""producBuscad02 producBuscad02""titulo02 titulo02""secc4 secc4""secc5 secc5";
+        .portadaIndex {
+            grid-area: portadaIndex;
+            .imgSeleccionSemanal {
+                width: $tamanio;
+            }
+            .descripPort {
+                padding: 25px;
+                bottom: 0;
+                right: 0;
+                h2 {
+                    font-size: 1.5rem;
+                }
+                .btn {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .titulo01 {
+            margin: 0;
+            padding: 5px;
+            .titulosIndex {
+                font-size: 1.5rem;
+            }
+        }
+        .producBuscad01 {
+            width: $tamanio;
+            grid-area: producBuscad01;
+            .prodLista {
+                .itemProd {
+                    display: block;
+                    width: 100%;
+                    .imgTam {
+                        width: 100%;
+                    }
+                    .descripProd {
+                        width: 100%;
+                        margin: 10px 0px 0px 0px;
+                        .tituVenta {
+                            font-size: 2rem;
+                        }
+                        .plataformJuegos {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .producBuscad02 {
+            width: $tamanio;
+            grid-area: producBuscad02;
+            .prodLista {
+                .itemProd {
+                    display: block;
+                    width: 100%;
+                    .imgTam {
+                        width: 100%;
+                    }
+                    .descripProd {
+                        width: 100%;
+                        margin: 10px 0px 0px 0px;
+                        .tituVenta {
+                            font-size: 2rem;
+                        }
+                        .plataformJuegos {
+                            text-align: center;
+                        }
+                        .btnProd {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -32,9 +105,11 @@
             }
         }
         .navinterProd {
+            width: 100%;
             position: relative;
         }
         .mainProd {
+            margin: 40px auto 40px auto;
             .itemProducto {
                 width: 50%;
             }
@@ -71,4 +146,18 @@
     }
 }
 
-//fin de Aplicando full responsive para el navegador
+@media screen and (max-width:960px) {
+    footer {
+        text-align: center;
+    }
+    footer .ulredes {
+        width: 75%;
+    }
+    footer ul li {
+        display: inline-block;
+    }
+    footer ul li a {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+} //fin de Aplicando full responsive para el navegador

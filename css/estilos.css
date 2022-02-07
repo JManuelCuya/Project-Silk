@@ -1,1059 +1,907 @@
 body {
-    background-color: #000000;
-    padding: 0;
-    margin: 0;
-}
-
-body .banner {
+  background-color: #000000;
+  padding: 0;
+  margin: 0; }
+  body .banner {
     width: 80%;
-    padding: 20px;
-}
-
-body .irForobtn {
-    width: 50%;
-}
+    padding: 20px; }
+  body .irForobtn {
+    width: 50%; }
+    body .irForobtn:hover {
+      transform: scale(1.2);
+      transition: all 0.8s; }
 
 @keyframes animacionapar {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
 header {
-    width: 100%;
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: black;
-    border-bottom: 1px solid #968d8d;
-    position: relative;
-}
-
-header .menuRespons {
-    display: none;
-}
-
-header nav {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: black;
+  border-bottom: 1px solid #0eb398; }
+  header .menuRespons {
+    display: none; }
+  header nav {
     width: 80%;
-    margin: 0px;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 20px;
-}
-
-header nav ul a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-family: "Anton", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-header nav ul a:hover {
-    color: inherit;
-}
-
-header nav ul a:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-header .div-carr {
+    margin: 0px; }
+    header nav ul {
+      display: flex;
+      list-style: none; }
+      header nav ul li {
+        display: inline-block;
+        padding: 20px; }
+      header nav ul a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-family: "Anton", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase; }
+        header nav ul a:hover {
+          color: inherit; }
+        header nav ul a:hover {
+          background-color: #ffffff;
+          color: #000000;
+          border-bottom: solid 2px #0eb398; }
+  header .div-carr {
     display: flex;
     padding: 25px;
     bottom: 0;
     right: 0;
-    position: absolute;
-}
-
-header .div-carr .iconoHeader {
-    width: 100%;
-}
+    position: absolute; }
+    header .div-carr .iconoHeader {
+      width: 100%; }
 
 .mainIndex {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: fr fr fr fr fr;
-    grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad02" "titulo02 titulo02" "secc4 secc5";
-}
-
-.mainIndex .portadaIndex {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: fr fr fr fr fr;
+  grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad02" "titulo02 titulo02" "secc4 secc5"; }
+  .mainIndex .portadaIndex {
     width: 100%;
     grid-area: portadaIndex;
-    position: relative;
-}
-
-.mainIndex .portadaIndex .imgSeleccionSemanal {
-    width: 100%;
-}
-
-.mainIndex .portadaIndex .descripPort {
-    padding: 150px;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-}
-
-.mainIndex .portadaIndex .descripPort h2 {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: white;
-}
-
-.mainIndex .portadaIndex .descripPort .btn {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: white;
-}
-
-.mainIndex .titulo01 {
+    position: relative; }
+    .mainIndex .portadaIndex .imgSeleccionSemanal {
+      width: 100%; }
+    .mainIndex .portadaIndex .descripPort {
+      padding: 150px;
+      bottom: 0;
+      right: 0;
+      position: absolute; }
+      .mainIndex .portadaIndex .descripPort h2 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: white; }
+      .mainIndex .portadaIndex .descripPort .btn {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: white; }
+  .mainIndex .titulo01 {
     padding: 20px;
     grid-area: titulo01;
     width: 100%;
-    height: 100%;
-}
-
-.mainIndex .titulo01 .titulosIndex {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-
-.mainIndex .producBuscad01 {
+    height: 100%; }
+    .mainIndex .titulo01 .titulosIndex {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 3rem; }
+  .mainIndex .producBuscad01 {
     width: 100%;
-    grid-area: producBuscad01;
-}
-
-.mainIndex .producBuscad01 .prodLista {
+    grid-area: producBuscad01; }
+    .mainIndex .producBuscad01 .prodLista {
+      width: 100%; }
+      .mainIndex .producBuscad01 .prodLista .itemProd {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        background-color: #2c3e50;
+        border: 2px solid; }
+        .mainIndex .producBuscad01 .prodLista .itemProd .imgTam {
+          width: 70%;
+          height: 100%;
+          border: 5px solid; }
+        .mainIndex .producBuscad01 .prodLista .itemProd .descripProd {
+          place-items: center;
+          margin: 10px;
+          width: 100%; }
+          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .tituVenta {
+            background-color: #252c33;
+            font-family: 'Anton', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            color: #0eb398;
+            font-size: 4rem;
+            font-family: "Anton", sans-serif;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 2rem; }
+          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .plataformJuegos {
+            background-color: #252c33;
+            font-family: 'Anton', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 20px;
+            width: 100%;
+            margin: 0px 0px 10px 0px; }
+            .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .plataformJuegos img {
+              transition: transform .2s; }
+              .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .plataformJuegos img:hover {
+                opacity: 0.7;
+                transform: scale(1.3); }
+          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .btnProd {
+            text-align: center;
+            color: #0eb398;
+            font-size: 4rem;
+            font-family: "Anton", sans-serif;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: white; }
+  .mainIndex .producBuscad02 {
     width: 100%;
-}
-
-.mainIndex .producBuscad01 .prodLista .itemProd {
-    display: flex;
-    width: 100%;
-    padding: 15px;
-    background-color: #2c3e50;
-    border: 2px solid;
-}
-
-.mainIndex .producBuscad01 .prodLista .itemProd .imgTam {
-    width: 70%;
-    height: 100%;
-    border: 5px solid;
-}
-
-.mainIndex .producBuscad01 .prodLista .itemProd .descripProd {
-    place-items: center;
-    margin: 10px;
-    width: 100%;
-}
-
-.mainIndex .producBuscad01 .prodLista .itemProd .descripProd .tituVenta {
-    background-color: #252c33;
-    font-family: 'Anton', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
+    grid-area: producBuscad02; }
+    .mainIndex .producBuscad02 .prodLista {
+      width: 100%; }
+      .mainIndex .producBuscad02 .prodLista .itemProd {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        background-color: #2c3e50;
+        border: 2px solid; }
+        .mainIndex .producBuscad02 .prodLista .itemProd .imgTam {
+          width: 70%;
+          height: 100%;
+          border: 5px solid; }
+        .mainIndex .producBuscad02 .prodLista .itemProd .descripProd {
+          place-items: center;
+          margin: 10px;
+          width: 100%; }
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .tituVenta {
+            background-color: #252c33;
+            font-family: 'Anton', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            color: #0eb398;
+            font-size: 4rem;
+            font-family: "Anton", sans-serif;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 2rem; }
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .plataformJuegos {
+            background-color: #252c33;
+            font-family: 'Anton', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 20px;
+            width: 100%;
+            margin: 0px 0px 10px 0px; }
+            .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .plataformJuegos img {
+              transition: transform .2s; }
+              .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .plataformJuegos img:hover {
+                opacity: 0.7;
+                transform: scale(1.3); }
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .btnProd {
+            text-align: center;
+            color: #0eb398;
+            font-size: 4rem;
+            font-family: "Anton", sans-serif;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: white; }
+  .mainIndex .titulo02 {
     padding: 20px;
     width: 100%;
-}
-
-.mainIndex .producBuscad01 .prodLista .itemProd .descripProd .plataformJuegos {
-    background-color: #252c33;
-    font-family: 'Anton', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-    margin: 0px 0px 10px 0px;
-}
-
-.mainIndex .producBuscad01 .prodLista .itemProd .descripProd .btnProd {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: white;
-}
-
-.mainIndex .producBuscad02 {
-    width: 100%;
-    grid-area: producBuscad02;
-}
-
-.mainIndex .producBuscad02 .prodLista {
-    width: 100%;
-}
-
-.mainIndex .producBuscad02 .prodLista .itemProd {
-    display: flex;
-    width: 100%;
-    padding: 15px;
-    background-color: #2c3e50;
-    border: 2px solid;
-}
-
-.mainIndex .producBuscad02 .prodLista .itemProd .imgTam {
-    width: 70%;
-    height: 100%;
-    border: 5px solid;
-}
-
-.mainIndex .producBuscad02 .prodLista .itemProd .descripProd {
-    place-items: center;
-    margin: 10px;
-    width: 100%;
-}
-
-.mainIndex .producBuscad02 .prodLista .itemProd .descripProd .tituVenta {
-    background-color: #252c33;
-    font-family: 'Anton', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-}
-
-.mainIndex .producBuscad02 .prodLista .itemProd .descripProd .plataformJuegos {
-    background-color: #252c33;
-    font-family: 'Anton', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-    margin: 0px 0px 10px 0px;
-}
-
-.mainIndex .producBuscad02 .prodLista .itemProd .descripProd .btnProd {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: white;
-}
-
-.mainIndex .titulo02 {
-    padding: 20px;
-    width: 100%;
-    grid-area: titulo02;
-}
-
-.mainIndex .titulo02 .titulosIndex {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-
-.mainIndex .secc4 {
+    grid-area: titulo02; }
+    .mainIndex .titulo02 .titulosIndex {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 3rem; }
+  .mainIndex .secc4 {
     grid-area: secc4;
     width: 100%;
     height: 100%;
-}
-
-.mainIndex .secc4 .descripProd {
-    display: grid;
-    place-items: center;
-    width: 100%;
-}
-
-.mainIndex .secc4 .descripProd .tituVenta {
-    background-color: #252c33;
-    font-family: 'Anton', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-}
-
-.mainIndex .secc4 .descripVid {
-    display: grid;
-    width: 100%;
-}
-
-.mainIndex .secc5 {
+    margin: 0px 0px 50px 0px; }
+    .mainIndex .secc4 .descripProd {
+      display: grid;
+      place-items: center;
+      width: 100%; }
+      .mainIndex .secc4 .descripProd .tituVenta {
+        background-color: #252c33;
+        font-family: 'Anton', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border: 2px solid #202528; }
+    .mainIndex .secc4 .descripVid {
+      display: grid;
+      width: 100%;
+      padding: 40px 0px 0px 0px; }
+  .mainIndex .secc5 {
     grid-area: secc5;
     width: 100%;
-}
-
-.mainIndex .secc5 .descripProd {
-    display: grid;
-    width: 100%;
-}
-
-.mainIndex .secc5 .descripProd .tituVenta {
-    background-color: #252c33;
-    font-family: 'Anton', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-}
-
-.mainIndex .secc5 .galerComd {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    row-gap: 5px;
-    column-gap: 5px;
-}
-
-.mainIndex .secc5 .galerComd .imgGaler {
-    width: 49.6%;
-    border-radius: 15px;
-}
-
-.mainIndex .secc5 .galerComd .imgGaler:hover {
-    opacity: 0.7;
-    transition: all 1.5s;
-}
+    margin: 0px 0px 50px 0px; }
+    .mainIndex .secc5 .descripProd {
+      display: grid;
+      width: 100%; }
+      .mainIndex .secc5 .descripProd .tituVenta {
+        background-color: #252c33;
+        font-family: 'Anton', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border: 2px solid #202528; }
+    .mainIndex .secc5 .galerComd {
+      padding: 40px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 5px;
+      column-gap: 5px;
+      justify-content: center; }
+      .mainIndex .secc5 .galerComd .conteimgGaler {
+        width: 48%; }
+        .mainIndex .secc5 .galerComd .conteimgGaler .imgGaler {
+          width: 100%;
+          border-radius: 15px; }
+          .mainIndex .secc5 .galerComd .conteimgGaler .imgGaler:hover {
+            opacity: 0.6;
+            transition: all 1s;
+            border-radius: 150px;
+            z-index: 1; }
+          .mainIndex .secc5 .galerComd .conteimgGaler .imgGaler:hover .btn {
+            display: inline; }
+        .mainIndex .secc5 .galerComd .conteimgGaler .btn {
+          display: none; }
 
 .imgCarro {
-    border-radius: 15px;
-    padding: 5px;
-}
+  border-radius: 15px;
+  padding: 5px; }
 
 .mainVentas {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: fr fr;
-    grid-template-areas: "navinterProd mainProd";
-}
-
-.mainVentas .navinterProd {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: fr fr;
+  grid-template-areas: "navinterProd mainProd"; }
+  .mainVentas .navinterProd {
     background-image: url(../images/fondoProd.jpg);
     width: 80%;
     grid-area: navinterProd;
-    z-index: inherit;
-}
-
-.mainVentas .navinterProd .itemNav {
-    width: 100%;
-    display: inline-block;
-    padding: 20px;
-    list-style: none;
-}
-
-.mainVentas .navinterProd .itemNav .cateNav {
-    width: 100%;
-    padding: 20px;
-}
-
-.mainVentas .navinterProd .itemNav .cateNav:hover {
-    background-color: red;
-}
-
-.mainVentas .navinterProd .itemNav a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-family: "Anton", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-.mainVentas .navinterProd .itemNav a:hover {
-    color: inherit;
-}
-
-.mainVentas .mainProd {
+    z-index: inherit; }
+    .mainVentas .navinterProd .itemNav {
+      width: 100%;
+      display: inline-block;
+      padding: 20px;
+      list-style: none; }
+      .mainVentas .navinterProd .itemNav .cateNav {
+        width: 100%;
+        padding: 20px; }
+        .mainVentas .navinterProd .itemNav .cateNav:hover {
+          background-color: red; }
+      .mainVentas .navinterProd .itemNav a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-family: "Anton", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase; }
+        .mainVentas .navinterProd .itemNav a:hover {
+          color: inherit; }
+  .mainVentas .mainProd {
     display: flex;
     flex-wrap: wrap;
     grid-area: mainProd;
     padding: 15px;
-    width: 100%;
-}
-
-.mainVentas .mainProd h3 {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    margin: 5px;
-    width: 100%;
-    padding: 20px;
-}
-
-.mainVentas .mainProd .itemProducto {
-    width: 25%;
-    height: auto;
-    background-color: #fff;
-    border: 0.9px solid #000000;
-    margin: 10px;
-    width: 31%;
-    border-radius: 20px;
-}
-
-.mainVentas .mainProd .itemProducto:hover {
-    transform: scale(1.1);
-    transition: all 0.8s;
-    z-index: 1;
-}
-
-.mainVentas .mainProd .itemProducto .imgTam {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-}
-
-.mainVentas .mainProd .itemProducto .descripJuego {
-    padding: 20px;
-    background-color: #2c3e50;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.mainVentas .mainProd .itemProducto .descripJuego .textoProducto {
-    color: black;
-    color: #ffffff;
-}
-
-.mainVentas .mainProd .itemProducto .descripJuego .precioPerifericos {
-    margin: auto;
-    width: 40%;
-    padding: 10px;
-    background-color: #3d8fe2;
-    border-radius: 20px;
-}
-
-.mainVentas .mainProd .conteBanner {
-    width: 100%;
-    display: flex;
-}
-
-.mainVentas .mainProd .conteBanner img {
-    width: 48%;
-    margin: 10px;
-    border: 1px solid white;
-}
+    width: 100%; }
+    .mainVentas .mainProd h3 {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 5px;
+      width: 100%;
+      padding: 20px; }
+    .mainVentas .mainProd .itemProducto {
+      width: 25%;
+      height: auto;
+      background-color: #fff;
+      border: 0.9px solid #000000;
+      margin: 10px;
+      width: 31%;
+      border-radius: 20px; }
+      .mainVentas .mainProd .itemProducto:hover {
+        transform: scale(1.1);
+        transition: all 0.8s;
+        z-index: 1; }
+      .mainVentas .mainProd .itemProducto .imgTam {
+        width: 100%;
+        height: auto;
+        border-radius: 20px; }
+      .mainVentas .mainProd .itemProducto .descripJuego {
+        padding: 20px;
+        background-color: #2c3e50;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center; }
+        .mainVentas .mainProd .itemProducto .descripJuego .textoProducto {
+          color: black;
+          color: #ffffff; }
+        .mainVentas .mainProd .itemProducto .descripJuego .precioPerifericos {
+          margin: auto;
+          width: 40%;
+          padding: 10px;
+          background-color: #3d8fe2;
+          border-radius: 20px;
+          color: #ffffff; }
+    .mainVentas .mainProd .conteBanner {
+      width: 100%;
+      display: flex; }
+      .mainVentas .mainProd .conteBanner img {
+        width: 48%;
+        margin: 10px;
+        border: 1px solid white; }
 
 .mainVenta {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: fr fr;
-    grid-template-areas: "navinterProd mainProd";
-}
-
-.mainVenta .navinterProd {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: fr fr;
+  grid-template-areas: "navinterProd mainProd"; }
+  .mainVenta .navinterProd {
     background-image: url(../images/fondoProd.jpg);
     width: 80%;
     grid-area: navinterProd;
-    z-index: inherit;
-}
-
-.mainVenta .navinterProd .itemNav {
-    width: 100%;
-    display: inline-block;
-    padding: 20px;
-    list-style: none;
-}
-
-.mainVenta .navinterProd .itemNav .cateNav {
-    width: 100%;
-    padding: 20px;
-}
-
-.mainVenta .navinterProd .itemNav .cateNav:hover {
-    background-color: red;
-}
-
-.mainVenta .navinterProd .itemNav a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-family: "Anton", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-.mainVenta .navinterProd .itemNav a:hover {
-    color: inherit;
-}
-
-.mainVenta .mainProd {
+    z-index: inherit; }
+    .mainVenta .navinterProd .itemNav {
+      width: 100%;
+      display: inline-block;
+      padding: 20px;
+      list-style: none; }
+      .mainVenta .navinterProd .itemNav .cateNav {
+        width: 100%;
+        padding: 20px; }
+        .mainVenta .navinterProd .itemNav .cateNav:hover {
+          background-color: red; }
+      .mainVenta .navinterProd .itemNav a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-family: "Anton", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase; }
+        .mainVenta .navinterProd .itemNav a:hover {
+          color: inherit; }
+  .mainVenta .mainProd {
     display: flex;
     flex-wrap: wrap;
     grid-area: mainProd;
     padding: 40px;
-    width: 100%;
-}
-
-.mainVenta .mainProd h3 {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-    margin: 5px;
-    width: 100%;
-    padding: 20px;
-}
-
-.mainVenta .mainProd .itemProducto {
-    width: 25%;
-    height: auto;
-    background-color: #fff;
-    border: 0.9px solid #000000;
-    width: 50%;
-}
-
-.mainVenta .mainProd .itemProducto:hover {
-    transform: scale(1.1);
-    transition: all 0.8s;
-    z-index: 1;
-}
-
-.mainVenta .mainProd .itemProducto .imgTam {
-    width: 100%;
-    height: auto;
-}
-
-.mainVenta .mainProd .itemProducto .descripJuego {
-    padding: 20px;
-}
-
-.mainVenta .mainProd .itemProducto .descripJuego .textoProducto {
-    color: black;
-}
+    width: 100%; }
+    .mainVenta .mainProd h3 {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 5px;
+      width: 100%;
+      padding: 20px; }
+    .mainVenta .mainProd .itemProducto {
+      width: 25%;
+      height: auto;
+      background-color: #fff;
+      border: 0.9px solid #000000;
+      width: 50%; }
+      .mainVenta .mainProd .itemProducto:hover {
+        transform: scale(1.1);
+        transition: all 0.8s;
+        z-index: 1; }
+      .mainVenta .mainProd .itemProducto .imgTam {
+        width: 100%;
+        height: auto; }
+      .mainVenta .mainProd .itemProducto .descripJuego {
+        padding: 20px; }
+        .mainVenta .mainProd .itemProducto .descripJuego .textoProducto {
+          color: black; }
 
 .mainProducs {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: fr fr;
-    grid-template-areas: "carrouselConta carrouselConta" "navinterProd mainProd";
-}
-
-.mainProducs .carrouselConta {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: fr fr;
+  grid-template-areas: "carrouselConta carrouselConta" "navinterProd mainProd"; }
+  .mainProducs .carrouselConta {
     width: 100%;
     display: flex;
-    grid-area: carrouselConta;
-}
-
-.mainProducs .carrouselConta .apareceTexto {
-    position: absolute;
-    z-index: 1;
-    padding: 40px;
-    font-size: 72px;
-    font-family: "Anton", sans-serif;
-}
-
-.mainProducs .carrouselConta .animacionapar {
-    animation-duration: 8s;
-    animation-name: animacionapar;
-    animation-iteration-count: 1;
-}
-
-.mainProducs .navinterProd {
+    grid-area: carrouselConta; }
+    .mainProducs .carrouselConta .apareceTexto {
+      position: absolute;
+      z-index: 1;
+      padding: 40px;
+      font-size: 72px;
+      font-family: "Anton", sans-serif; }
+    .mainProducs .carrouselConta .animacionapar {
+      animation-duration: 8s;
+      animation-name: animacionapar;
+      animation-iteration-count: 1; }
+  .mainProducs .navinterProd {
     background-image: url(../images/fondoProd.jpg);
     width: 80%;
     grid-area: navinterProd;
-    z-index: inherit;
-}
-
-.mainProducs .navinterProd .itemNav {
-    width: 100%;
-    display: inline-block;
-    padding: 0px;
-    list-style: none;
-}
-
-.mainProducs .navinterProd .itemNav .cateNav {
-    width: 100%;
-    padding: 20px;
-}
-
-.mainProducs .navinterProd .itemNav .cateNav:hover {
-    background-color: red;
-}
-
-.mainProducs .navinterProd .itemNav a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-family: "Anton", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-.mainProducs .navinterProd .itemNav a:hover {
-    color: inherit;
-}
-
-.mainProducs .mainProd {
+    z-index: inherit; }
+    .mainProducs .navinterProd .itemNav {
+      width: 100%;
+      display: inline-block;
+      padding: 0px;
+      list-style: none; }
+      .mainProducs .navinterProd .itemNav .cateNav {
+        width: 100%;
+        padding: 20px; }
+        .mainProducs .navinterProd .itemNav .cateNav:hover {
+          background-color: red; }
+      .mainProducs .navinterProd .itemNav a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-family: "Anton", sans-serif;
+        font-size: 24px;
+        text-transform: uppercase; }
+        .mainProducs .navinterProd .itemNav a:hover {
+          color: inherit; }
+  .mainProducs .mainProd {
     display: flex;
     flex-wrap: wrap;
     grid-area: mainProd;
-    width: 80%;
-}
-
-.mainProducs .mainProd .itemProducto {
-    width: 25%;
-    height: auto;
-    background-color: #fff;
-    border: 0.9px solid #000000;
-}
-
-.mainProducs .mainProd .itemProducto:hover {
-    transform: scale(1.3);
-    transition: all 0.8s;
-    z-index: 1;
-}
-
-.mainProducs .mainProd .itemProducto .imgTam {
-    width: 100%;
-    height: auto;
-}
-
-.mainProducs .mainProd .itemProducto .descripJuego {
-    padding: 20px;
-}
-
-.mainProducs .mainProd .itemProducto .descripJuego .textoProducto {
-    color: black;
-}
+    width: 80%; }
+    .mainProducs .mainProd .itemProducto {
+      width: 25%;
+      height: auto;
+      background-color: #fff;
+      border: 0.9px solid #000000; }
+      .mainProducs .mainProd .itemProducto:hover {
+        transform: scale(1.3);
+        transition: all 0.8s;
+        z-index: 1; }
+      .mainProducs .mainProd .itemProducto .imgTam {
+        width: 100%;
+        height: auto; }
+      .mainProducs .mainProd .itemProducto .descripJuego {
+        padding: 20px; }
+        .mainProducs .mainProd .itemProducto .descripJuego .textoProducto {
+          color: black; }
 
 .mainContComu {
-    display: grid;
-    grid-template-columns: fr fr;
-    grid-template-rows: repeat(7, fr);
-    grid-template-areas: "gr1 gr1" "contenedorTexto contenedorTexto" "contenEnviarFoto contenEnviarFoto" "postularSemanal postularSemanal" "campComentario campComentario" "anuncioSemanal anuncioSemanal" "contComunit contComunit";
-    gap: 5px;
-    width: 100%;
-}
-
-.mainContComu .gr1 {
+  display: grid;
+  grid-template-columns: fr fr;
+  grid-template-rows: repeat(7, fr);
+  grid-template-areas: "gr1 gr1" "contenedorTexto contenedorTexto" "contenEnviarFoto contenEnviarFoto" "postularSemanal postularSemanal" "campComentario campComentario" "anuncioSemanal anuncioSemanal" "contComunit contComunit";
+  gap: 25px;
+  width: 100%; }
+  .mainContComu .gr1 {
     text-align: center;
     grid-area: gr1;
-    padding: 20px;
-}
-
-.mainContComu .gr1 h3 {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.mainContComu .contenedorTexto {
-    width: 100%;
-    padding: 20px;
-    background-color: #2c3e50;
+    padding: 20px; }
+    .mainContComu .gr1 h3 {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase; }
+  .mainContComu .contenedorTexto {
     grid-area: contenedorTexto;
-}
-
-.mainContComu .contenedorTexto .textoContenido {
-    color: #ffffff;
-}
-
-.mainContComu .contenEnviarFoto {
-    width: 100%;
+    width: 60%;
+    margin: auto;
     padding: 20px;
     background-color: #2c3e50;
+    border: PowderBlue 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; }
+    .mainContComu .contenedorTexto .textoContenido {
+      color: #ffffff;
+      font-size: 18px;
+      text-align: justify; }
+  .mainContComu .contenEnviarFoto {
     grid-area: contenEnviarFoto;
-}
-
-.mainContComu .contenEnviarFoto .textoContenido {
-    color: #ffffff;
-}
-
-.mainContComu .postularSemanal {
+    border: PowderBlue 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #2c3e50; }
+    .mainContComu .contenEnviarFoto p {
+      color: #ffffff;
+      font-size: 18px;
+      text-align: justify; }
+  .mainContComu .postularSemanal {
     grid-area: postularSemanal;
     width: 100%;
     margin: auto;
     padding: 20px;
-    width: 100%;
-}
-
-.mainContComu .postularSemanal .conteEnvi {
-    width: 50%;
-    margin: auto;
-}
-
-.mainContComu .postularSemanal p {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.mainContComu .campComentario {
+    width: 100%; }
+    .mainContComu .postularSemanal .conteEnvi {
+      width: 50%;
+      margin: auto; }
+    .mainContComu .postularSemanal p {
+      text-align: center;
+      color: #0eb398;
+      font-size: 4rem;
+      font-family: "Anton", sans-serif;
+      line-height: 1;
+      text-transform: uppercase; }
+  .mainContComu .campComentario {
     grid-area: campComentario;
     width: 70%;
-    margin: auto;
-    padding: 20px;
-}
-
-.mainContComu .campComentario p {
-    color: #ffffff;
-}
-
-.mainContComu .anuncioSemanal {
+    margin: auto; }
+    .mainContComu .campComentario p {
+      color: #ffffff;
+      font-size: 18px;
+      text-align: justify;
+      display: block; }
+    .mainContComu .campComentario .campoComentario {
+      display: flex; }
+      .mainContComu .campComentario .campoComentario .textAreas {
+        width: 80%; }
+      .mainContComu .campComentario .campoComentario .btn {
+        margin: 10px;
+        width: 15%; }
+  .mainContComu .anuncioSemanal {
     display: grid;
     grid-template-columns: fr fr;
     grid-template-rows: auto;
     grid-template-areas: "anuncioTorneo anuncioTorneo" "avisoTorneo avisoTorneo" "avisoTorneo2 avisoTorneo2" "contTable contTable";
+    width: 100%; }
+    .mainContComu .anuncioSemanal .anuncioTorneo {
+      grid-area: anuncioTorneo;
+      width: 100%;
+      text-align: center; }
+      .mainContComu .anuncioSemanal .anuncioTorneo h3 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase; }
+      .mainContComu .anuncioSemanal .anuncioTorneo p {
+        color: #ffffff; }
+    .mainContComu .anuncioSemanal .avisoTorneo {
+      width: 100%;
+      grid-area: avisoTorneo;
+      padding: 20px; }
+      .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo {
+        width: 100%;
+        text-align: left; }
+        .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo h3 {
+          color: #0eb398;
+          font-size: 2rem;
+          font-family: "Anton", sans-serif; }
+        .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo p {
+          color: #ffffff; }
+      .mainContComu .anuncioSemanal .avisoTorneo .conteTorn {
+        display: flex; }
+        .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo {
+          width: 100%;
+          margin: 20px; }
+          .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo img {
+            width: 100%; }
+          .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 {
+            background-color: #2c3e50; }
+            .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 p {
+              margin: 5px;
+              padding: 5px;
+              color: #ffffff; }
+          .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo:hover {
+            opacity: 0.6;
+            transform: scale(1.1);
+            transition: all 0.8s; }
+    .mainContComu .anuncioSemanal .avisoTorneo2 {
+      width: 100%;
+      grid-area: avisoTorneo2;
+      padding: 20px; }
+      .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo {
+        width: 100%;
+        text-align: left; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo h3 {
+          color: #0eb398;
+          font-size: 2rem;
+          font-family: "Anton", sans-serif; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo p {
+          color: #ffffff; }
+      .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn {
+        display: flex; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo {
+          width: 100%;
+          margin: 20px; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo img {
+            width: 100%; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 {
+            background-color: #2c3e50;
+            width: 100%; }
+            .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 p {
+              margin: 5px;
+              padding: 5px;
+              color: #ffffff; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo:hover {
+            opacity: 0.6;
+            transform: scale(1.1);
+            transition: all 0.8s; }
+    .mainContComu .anuncioSemanal .contTable {
+      width: 100%;
+      grid-area: contTable; }
+      .mainContComu .anuncioSemanal .contTable h3 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase; }
+  .mainContComu .contComunit {
     width: 100%;
-}
-
-.mainContComu .anuncioSemanal .anuncioTorneo {
-    grid-area: anuncioTorneo;
-    width: 100%;
-    text-align: center;
-}
-
-.mainContComu .anuncioSemanal .anuncioTorneo h3 {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.mainContComu .anuncioSemanal .anuncioTorneo p {
-    color: #ffffff;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo {
-    width: 100%;
-    grid-area: avisoTorneo;
-    padding: 20px;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo {
-    width: 100%;
-    text-align: left;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo h3 {
-    color: #0eb398;
-    font-size: 2rem;
-    font-family: "Anton", sans-serif;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo p {
-    color: #ffffff;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .conteTorn {
-    display: flex;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo {
-    width: 100%;
-    margin: 20px;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo img {
-    width: 100%;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 {
-    background-color: #2c3e50;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 p {
-    margin: 5px;
-    padding: 5px;
-    color: #ffffff;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo:hover {
-    opacity: 0.6;
-    transform: scale(1.1);
-    transition: all 0.8s;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 {
-    width: 100%;
-    grid-area: avisoTorneo2;
-    padding: 20px;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo {
-    width: 100%;
-    text-align: left;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo h3 {
-    color: #0eb398;
-    font-size: 2rem;
-    font-family: "Anton", sans-serif;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo p {
-    color: #ffffff;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn {
-    display: flex;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo {
-    width: 100%;
-    margin: 20px;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo img {
-    width: 100%;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 {
-    background-color: #2c3e50;
-    width: 100%;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 p {
-    margin: 5px;
-    padding: 5px;
-    color: #ffffff;
-}
-
-.mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo:hover {
-    opacity: 0.6;
-    transform: scale(1.1);
-    transition: all 0.8s;
-}
-
-.mainContComu .anuncioSemanal .contTable {
-    width: 100%;
-    grid-area: contTable;
-}
-
-.mainContComu .anuncioSemanal .contTable h3 {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.mainContComu .contComunit {
-    width: 100%;
-    grid-area: contComunit;
-}
-
-.mainContComu .contComunit .decripCaptu {
-    width: 100%;
-}
-
-.mainContComu .contComunit .decripCaptu h3 {
-    text-align: center;
-    color: #0eb398;
-    font-size: 4rem;
-    font-family: "Anton", sans-serif;
-    line-height: 1;
-    text-transform: uppercase;
-}
-
-.mainContComu .contComunit .conteTorn {
-    display: flex;
-}
-
-.mainContComu .contComunit .conteTorn .contCap {
-    margin: 20px;
-}
-
-.mainContComu .contComunit .conteTorn .contCap img {
-    width: 100%;
-}
+    grid-area: contComunit; }
+    .mainContComu .contComunit .decripCaptu {
+      width: 100%; }
+      .mainContComu .contComunit .decripCaptu h3 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase; }
+    .mainContComu .contComunit .conteTorn {
+      display: flex; }
+      .mainContComu .contComunit .conteTorn .contCap {
+        width: 100%;
+        margin: 20px;
+        position: relative; }
+        .mainContComu .contComunit .conteTorn .contCap img {
+          width: 100%; }
+        .mainContComu .contComunit .conteTorn .contCap .cajas {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          display: block; }
+          .mainContComu .contComunit .conteTorn .contCap .cajas:hover {
+            background-color: #49bb8b;
+            position: absolute;
+            opacity: 0.4;
+            width: 100%;
+            height: 100%;
+            transition-duration: 1s;
+            transition-property: all; }
+          .mainContComu .contComunit .conteTorn .contCap .cajas h2 {
+            text-align: center;
+            color: #0eb398;
+            font-size: 4rem;
+            font-family: "Anton", sans-serif;
+            line-height: 1;
+            text-transform: uppercase;
+            font-size: 2rem;
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #3a3636;
+            padding: 20px; }
+        .mainContComu .contComunit .conteTorn .contCap:hover h2 {
+          display: block; }
 
 .mainRegistro {
-    background-image: url(../images/fondoregis.jpg);
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    color: #fff;
-    padding: 50px;
-    margin: 20px auto 20px auto;
-    width: 60%;
-}
-
-.mainRegistro .cajasEinputs {
+  background-image: url(../images/fondoregis.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  color: #fff;
+  padding: 50px;
+  margin: 20px auto 20px auto;
+  width: 60%; }
+  .mainRegistro .cajasEinputs {
     flex: 0 0 auto;
-    width: 80%;
-}
+    width: 80%; }
 
 .mainContac {
-    width: 50%;
-    background-image: url(../images/fondoContac.jpg);
-    background-size: cover;
-    margin: 20px auto 20px auto;
-    padding: 50px;
-    color: #fff;
-}
+  width: 50%;
+  background-image: url(../images/fondoContac.jpg);
+  background-size: cover;
+  margin: 20px auto 20px auto;
+  padding: 50px;
+  color: #fff; }
 
 footer {
-    position: absolute;
-    grid-area: footer;
-    width: 100%;
-    color: white;
-    background-color: black;
-    border-top: 1px solid #2c2b2b;
-    padding: 20px;
-}
-
-footer .textofooter {
-    text-align: center;
-}
-
-footer .ulredes {
+  position: absolute;
+  grid-area: footer;
+  width: 100%;
+  color: white;
+  background-color: black;
+  border-top: 1px solid #2c2b2b;
+  padding: 20px; }
+  footer .textofooter {
+    text-align: center; }
+  footer .ulredes {
     width: 20%;
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 20px;
-    column-gap: 15px;
-}
-
-footer .ulredes .itemredes {
-    width: 100%;
-}
-
-footer .ulredes .itemredes .iconsRedes {
-    width: 100%;
-    transition: transform .2s;
-}
-
-footer .ulredes .itemredes .iconsRedes:hover {
-    opacity: 0.7;
-    transform: scale(1.3);
-}
-
-footer ul li {
+    column-gap: 15px; }
+    footer .ulredes .itemredes {
+      width: 100%; }
+      footer .ulredes .itemredes .iconsRedes {
+        width: 100%;
+        transition: transform .2s; }
+        footer .ulredes .itemredes .iconsRedes:hover {
+          opacity: 0.7;
+          transform: scale(1.3); }
+  footer ul li {
     padding: 15px;
-    list-style: none;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-family: "Anton", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-size: 24px;
-}
-
-footer ul li a:hover {
-    color: inherit;
-}
+    list-style: none; }
+    footer ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 20px;
+      font-family: "Anton", sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-size: 24px; }
+      footer ul li a:hover {
+        color: inherit; }
 
 .tituloAdic {
-    letter-spacing: 5px;
-    font-size: 26px;
-}
+  letter-spacing: 5px;
+  font-size: 26px; }
 
 @media screen and (max-width: 980px) {
-    .mainIndex {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(7, fr);
-        grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad01" "producBuscad02 producBuscad02" "titulo02 titulo02" "secc4 secc4" "secc5 secc5";
-    }
-}
+  .mainIndex {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(7, fr);
+    grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad01" "producBuscad02 producBuscad02" "titulo02 titulo02" "secc4 secc4" "secc5 secc5"; }
+    .mainIndex .portadaIndex {
+      grid-area: portadaIndex; }
+      .mainIndex .portadaIndex .imgSeleccionSemanal {
+        width: 100%; }
+      .mainIndex .portadaIndex .descripPort {
+        padding: 25px;
+        bottom: 0;
+        right: 0; }
+        .mainIndex .portadaIndex .descripPort h2 {
+          font-size: 1.5rem; }
+        .mainIndex .portadaIndex .descripPort .btn {
+          font-size: 1.5rem; }
+    .mainIndex .titulo01 {
+      margin: 0;
+      padding: 5px; }
+      .mainIndex .titulo01 .titulosIndex {
+        font-size: 1.5rem; }
+    .mainIndex .producBuscad01 {
+      width: 100%;
+      grid-area: producBuscad01; }
+      .mainIndex .producBuscad01 .prodLista .itemProd {
+        display: block;
+        width: 100%; }
+        .mainIndex .producBuscad01 .prodLista .itemProd .imgTam {
+          width: 100%; }
+        .mainIndex .producBuscad01 .prodLista .itemProd .descripProd {
+          width: 100%;
+          margin: 10px 0px 0px 0px; }
+          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .tituVenta {
+            font-size: 2rem; }
+          .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .plataformJuegos {
+            text-align: center; }
+    .mainIndex .producBuscad02 {
+      width: 100%;
+      grid-area: producBuscad02; }
+      .mainIndex .producBuscad02 .prodLista .itemProd {
+        display: block;
+        width: 100%; }
+        .mainIndex .producBuscad02 .prodLista .itemProd .imgTam {
+          width: 100%; }
+        .mainIndex .producBuscad02 .prodLista .itemProd .descripProd {
+          width: 100%;
+          margin: 10px 0px 0px 0px; }
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .tituVenta {
+            font-size: 2rem; }
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .plataformJuegos {
+            text-align: center; }
+          .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .btnProd {
+            font-size: 1.5rem; } }
 
 @media screen and (max-width: 960px) {
-    .mainProducs {
-        grid-template-columns: fr;
-        grid-template-rows: fr fr fr;
-        grid-template-areas: "carrouselConta carrouselConta" "navinterProd navinterProd" "mainProd mainProd";
-    }
+  .mainProducs {
+    grid-template-columns: fr;
+    grid-template-rows: fr fr fr;
+    grid-template-areas: "carrouselConta carrouselConta" "navinterProd navinterProd" "mainProd mainProd"; }
     .mainProducs .carrouselConta {
-        width: 100%;
-        padding: 0px;
-    }
-    .mainProducs .carrouselConta .apareceTexto {
-        font-size: 24px;
-    }
+      width: 100%;
+      padding: 0px; }
+      .mainProducs .carrouselConta .apareceTexto {
+        font-size: 24px; }
     .mainProducs .navinterProd {
-        position: relative;
-    }
-    .mainProducs .mainProd .itemProducto {
-        width: 50%;
-    }
-}
+      width: 100%;
+      position: relative; }
+    .mainProducs .mainProd {
+      margin: 40px auto 40px auto; }
+      .mainProducs .mainProd .itemProducto {
+        width: 50%; } }
 
 @media screen and (max-width: 960px) {
-    .mainComunity {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-}
+  .mainComunity {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
 
 @media screen and (max-width: 960px) {
-    .galerCom {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-}
+  .galerCom {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
 
 @media screen and (max-width: 960px) {
-    header nav {
-        display: none;
-    }
-    header .menuRespons {
-        display: inline;
-        padding: 10px;
-    }
+  header nav {
+    display: none; }
+  header .menuRespons {
+    display: inline;
+    padding: 10px; }
     header .menuRespons:after nav {
-        display: inline-block;
-    }
-}
+      display: inline-block; } }
+
+@media screen and (max-width: 960px) {
+  footer {
+    text-align: center; }
+  footer .ulredes {
+    width: 75%; }
+  footer ul li {
+    display: inline-block; }
+  footer ul li a {
+    font-size: 1.5rem;
+    padding: 5px; } }

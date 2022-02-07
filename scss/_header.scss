@@ -5,8 +5,8 @@ header {
     top: 0;
     z-index: 2;
     background-color: black;
-    border-bottom: 1px solid rgb(150, 141, 141);
-    position: relative;
+    border-bottom: 1px solid $color_letra_torneo;
+    ;
     .menuRespons {
         display: none;
     }
@@ -25,6 +25,8 @@ header {
                 &:hover {
                     background-color: $cl_letra;
                     color: $cl_fondo;
+                    border-bottom: solid 2px $color_letra_torneo;
+                    ;
                 }
             }
         }
