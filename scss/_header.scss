@@ -6,15 +6,12 @@ header {
     z-index: 2;
     background-color: black;
     border-bottom: 1px solid $color_letra_torneo;
-    ;
-    .menuRespons {
+    .menumobile {
         display: none;
     }
     nav {
-        width: 80%;
-        margin: 0px;
+        display: flex;
         ul {
-            display: flex;
             list-style: none;
             li {
                 display: inline-block;
