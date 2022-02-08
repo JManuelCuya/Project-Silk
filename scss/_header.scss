@@ -1,44 +1,66 @@
-header {
-    width: 100%;
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: black;
-    border-bottom: 1px solid $color_letra_torneo;
-    .menumobile {
-        display: none;
-    }
-    nav {
-        display: flex;
-        ul {
-            list-style: none;
-            li {
-                display: inline-block;
-                padding: 20px;
-            }
-            a {
-                @include etiquetasNav;
-                &:focus {
-                    background-color: $color_letra_torneo;
+        header {
+            width: 100%;
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background-color: black;
+            border-bottom: 1px solid $color_letra_torneo;
+            nav {
+                height: 80px;
+                width: 100%;
+                ul {
+                    float: left;
+                    li {
+                        display: inline-block;
+                        line-height: 80px;
+                        a {
+                            @include formtColorTitulos;
+                            color: #fff;
+                            font-size: 18px;
+                            padding: 20px;
+                            border-radius: 3px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                        }
+                    }
                 }
-                &:hover {
-                    color: $cl_letra;
-                    background-color: $color_letra_torneo;
-                    transition: .4s;
-                    border-bottom: 1px solid white;
+                .enlace {
+                    position: absolute;
+                    padding: 20px 50px;
+                    .logo {
+                        height: 40px;
+                    }
+                }
+            }
+            .div-carr {
+                display: flex;
+                padding: 25px;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                .iconoHeader {
+                    width: $tamanio;
                 }
             }
         }
-    }
-    .div-carr {
-        display: flex;
-        padding: 25px;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        .iconoHeader {
-            width: $tamanio;
+        
+        li a:hover {
+            background: $color_letra_torneo;
+            transition: .5s;
+            color: white;
         }
-    }
-}
+        
+        .checkbtn {
+            font-size: 30px;
+            color: #fff;
+            float: left;
+            line-height: 80px;
+            margin-left: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        #check {
+            display: none;
+        }

@@ -19,7 +19,6 @@ body {
 @mixin navCategoriasProducto {
     background-image: url(../images/fondoProd.jpg);
     width: 80%;
-    grid-area: navinterProd;
     z-index: inherit;
     .itemNav {
         width: 100%;
@@ -30,7 +29,7 @@ body {
             width: 100%;
             padding: 20px;
             &:hover {
-                background-color: red;
+                background-color: $color_letra_torneo;
             }
         }
         a {

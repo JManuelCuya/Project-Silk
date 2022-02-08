@@ -140,6 +140,7 @@
     grid-template-rows: fr fr;
     grid-template-areas: "navinterProd mainProd";
     .navinterProd {
+        grid-area: navinterProd;
         @include navCategoriasProducto;
     }
     //fin de navegador
@@ -210,6 +211,7 @@
     grid-template-rows: fr fr;
     grid-template-areas: "navinterProd mainProd";
     .navinterProd {
+        grid-area: navinterProd;
         @include navCategoriasProducto;
     }
     .mainProd {
@@ -283,7 +285,7 @@
                 width: 100%;
                 padding: 20px;
                 &:hover {
-                    background-color: red;
+                    background-color: $color_letra_torneo;
                 }
             }
             a {
@@ -615,7 +617,6 @@
         padding: 20px;
         font-size: 1.5rem;
         border: 1px solid #198754;
-        border-radius: 0.25rem;
     }
     .btn-success {
         @include formtColorTitulos;
