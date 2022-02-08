@@ -22,11 +22,14 @@ header {
             }
             a {
                 @include etiquetasNav;
+                &:focus {
+                    background-color: $color_letra_torneo;
+                }
                 &:hover {
-                    background-color: $cl_letra;
-                    color: $cl_fondo;
-                    border-bottom: solid 2px $color_letra_torneo;
-                    ;
+                    color: $cl_letra;
+                    background-color: $color_letra_torneo;
+                    transition: .4s;
+                    border-bottom: 1px solid white;
                 }
             }
         }

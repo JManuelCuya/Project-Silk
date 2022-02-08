@@ -45,12 +45,13 @@ header {
         font-family: "Anton", sans-serif;
         font-size: 24px;
         text-transform: uppercase; }
+        header nav ul a:focus {
+          background-color: #0eb398; }
         header nav ul a:hover {
-          color: inherit; }
-        header nav ul a:hover {
-          background-color: #ffffff;
-          color: #000000;
-          border-bottom: solid 2px #0eb398; }
+          color: #ffffff;
+          background-color: #0eb398;
+          transition: .4s;
+          border-bottom: 1px solid white; }
   header .div-carr {
     display: flex;
     padding: 25px;
@@ -330,8 +331,6 @@ header {
         font-family: "Anton", sans-serif;
         font-size: 24px;
         text-transform: uppercase; }
-        .mainVentas .navinterProd .itemNav a:hover {
-          color: inherit; }
   .mainVentas .mainProd {
     display: flex;
     flex-wrap: wrap;
@@ -416,8 +415,6 @@ header {
         font-family: "Anton", sans-serif;
         font-size: 24px;
         text-transform: uppercase; }
-        .mainVenta .navinterProd .itemNav a:hover {
-          color: inherit; }
   .mainVenta .mainProd {
     display: flex;
     flex-wrap: wrap;
@@ -494,8 +491,6 @@ header {
         font-family: "Anton", sans-serif;
         font-size: 24px;
         text-transform: uppercase; }
-        .mainProducs .navinterProd .itemNav a:hover {
-          color: inherit; }
   .mainProducs .mainProd {
     display: flex;
     flex-wrap: wrap;
@@ -796,32 +791,31 @@ footer {
       font-size: 24px;
       text-transform: uppercase;
       font-size: 24px; }
-      footer ul li a:hover {
-        color: inherit; }
 
 .tituloAdic {
   letter-spacing: 5px;
   font-size: 26px; }
 
 @media screen and (max-width: 980px) {
+  header .div-carr {
+    padding: 15px; }
+    header .div-carr .iconoHeader {
+      width: 80%; } }
+
+@media screen and (max-width: 720px) {
   .mainIndex {
-    grid-template-columns: 50% 50%;
     grid-template-rows: repeat(7, fr);
     grid-template-areas: "portadaIndex portadaIndex" "titulo01 titulo01" "producBuscad01 producBuscad01" "producBuscad02 producBuscad02" "titulo02 titulo02" "secc4 secc4" "secc5 secc5"; }
     .mainIndex .portadaIndex {
       grid-area: portadaIndex; }
-      .mainIndex .portadaIndex .imgSeleccionSemanal {
-        width: 100%; }
       .mainIndex .portadaIndex .descripPort {
-        padding: 25px;
-        bottom: 0;
-        right: 0; }
+        padding: 10px; }
         .mainIndex .portadaIndex .descripPort h2 {
-          font-size: 1.5rem; }
+          font-size: 1rem; }
         .mainIndex .portadaIndex .descripPort .btn {
-          font-size: 1.5rem; }
+          font-size: 1rem; }
     .mainIndex .titulo01 {
-      margin: 0;
+      margin-top: 5px;
       padding: 5px; }
       .mainIndex .titulo01 .titulosIndex {
         font-size: 1.5rem; }
@@ -837,9 +831,10 @@ footer {
           width: 100%;
           margin: 10px 0px 0px 0px; }
           .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .tituVenta {
-            font-size: 2rem; }
+            font-size: 1.5rem; }
           .mainIndex .producBuscad01 .prodLista .itemProd .descripProd .plataformJuegos {
-            text-align: center; }
+            text-align: center;
+            font-size: 1rem; }
     .mainIndex .producBuscad02 {
       width: 100%;
       grid-area: producBuscad02; }
@@ -852,11 +847,35 @@ footer {
           width: 100%;
           margin: 10px 0px 0px 0px; }
           .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .tituVenta {
-            font-size: 2rem; }
+            font-size: 1.5rem; }
           .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .plataformJuegos {
             text-align: center; }
           .mainIndex .producBuscad02 .prodLista .itemProd .descripProd .btnProd {
-            font-size: 1.5rem; } }
+            font-size: 1.5rem; }
+    .mainIndex .titulo02 .titulosIndex {
+      font-size: 1.5rem; }
+    .mainIndex .secc4 {
+      margin: 0; }
+      .mainIndex .secc4 .descripVid {
+        padding: 0px; }
+    .mainIndex .secc5 {
+      margin: 0; }
+      .mainIndex .secc5 .galerComd {
+        padding: 0px; }
+        .mainIndex .secc5 .galerComd .conteimgGaler {
+          width: 48%; }
+          .mainIndex .secc5 .galerComd .conteimgGaler .imgGaler {
+            width: 100%;
+            border-radius: 15px; }
+            .mainIndex .secc5 .galerComd .conteimgGaler .imgGaler:hover {
+              opacity: 0.6;
+              transition: all 1s;
+              border-radius: 150px;
+              z-index: 1; }
+            .mainIndex .secc5 .galerComd .conteimgGaler .imgGaler:hover .btn {
+              display: inline; }
+          .mainIndex .secc5 .galerComd .conteimgGaler .btn {
+            display: none; } }
 
 @media screen and (max-width: 960px) {
   .mainProducs {
@@ -891,9 +910,14 @@ footer {
     display: none; }
   header .menuRespons {
     display: inline;
-    padding: 10px; }
+    padding: 25px; }
     header .menuRespons:after nav {
-      display: inline-block; } }
+      display: inline-block; }
+  header .menuRespons i {
+    width: 100%;
+    padding: 15px;
+    color: black;
+    background-color: #f2f2f3; } }
 
 @media screen and (max-width: 960px) {
   footer {
@@ -903,5 +927,258 @@ footer {
   footer ul li {
     display: inline-block; }
   footer ul li a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 5px; } }
+
+@media screen and (max-width: 960px) {
+  .mainVentas {
+    grid-template-columns: 100%;
+    grid-template-areas: "navinterProd" "mainProd"; }
+    .mainVentas .navinterProd {
+      width: 100%; }
+      .mainVentas .navinterProd .itemNav a {
+        font-size: 1rem; }
+    .mainVentas .mainProd {
+      justify-content: center; }
+      .mainVentas .mainProd h3 {
+        font-size: 1.5rem;
+        margin: 5px;
+        padding: 5px; }
+      .mainVentas .mainProd .itemProducto {
+        width: 80%; }
+      .mainVentas .mainProd .conteBanner {
+        display: block; }
+        .mainVentas .mainProd .conteBanner img {
+          width: 100%; } }
+
+@media screen and (max-width: 960px) {
+  .mainVenta {
+    grid-template-columns: 100%;
+    grid-template-areas: "navinterProd" "mainProd"; }
+    .mainVenta .navinterProd {
+      width: 100%; }
+      .mainVenta .navinterProd .itemNav a {
+        font-size: 1rem; }
+    .mainVenta .mainProd {
+      justify-content: center; }
+      .mainVenta .mainProd h3 {
+        font-size: 1.5rem;
+        margin: 5px;
+        padding: 5px; }
+      .mainVenta .mainProd .itemProducto {
+        width: 100%;
+        margin: 10px; }
+      .mainVenta .mainProd .conteBanner {
+        display: block; }
+        .mainVenta .mainProd .conteBanner img {
+          width: 100%; } }
+
+@media screen and (max-width: 960px) {
+  .mainContComu {
+    grid-template-columns: fr;
+    grid-template-rows: repeat(7, fr);
+    grid-template-areas: "gr1 gr1" "contenedorTexto contenedorTexto" "contenEnviarFoto contenEnviarFoto" "postularSemanal postularSemanal" "campComentario campComentario" "anuncioSemanal anuncioSemanal" "contComunit contComunit";
+    gap: 25px;
+    width: 100%; }
+    .mainContComu .gr1 {
+      padding: 10px; }
+      .mainContComu .gr1 h3 {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 2rem; }
+    .mainContComu .contenedorTexto {
+      width: 100%; }
+      .mainContComu .contenedorTexto .textoContenido {
+        font-size: 14px; }
+    .mainContComu .contenEnviarFoto {
+      grid-area: contenEnviarFoto;
+      border: PowderBlue 5px solid;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      width: 60%;
+      margin: auto;
+      padding: 20px;
+      background-color: #2c3e50; }
+      .mainContComu .contenEnviarFoto p {
+        color: #ffffff;
+        font-size: 18px;
+        text-align: justify; }
+    .mainContComu .postularSemanal {
+      grid-area: postularSemanal;
+      width: 100%;
+      margin: auto;
+      padding: 20px;
+      width: 100%; }
+      .mainContComu .postularSemanal .conteEnvi {
+        width: 50%;
+        margin: auto; }
+      .mainContComu .postularSemanal p {
+        text-align: center;
+        color: #0eb398;
+        font-size: 4rem;
+        font-family: "Anton", sans-serif;
+        line-height: 1;
+        text-transform: uppercase; }
+    .mainContComu .campComentario {
+      grid-area: campComentario;
+      width: 70%;
+      margin: auto; }
+      .mainContComu .campComentario p {
+        color: #ffffff;
+        font-size: 18px;
+        text-align: justify;
+        display: block; }
+      .mainContComu .campComentario .campoComentario {
+        display: flex; }
+        .mainContComu .campComentario .campoComentario .textAreas {
+          width: 80%; }
+        .mainContComu .campComentario .campoComentario .btn {
+          margin: 10px;
+          width: 15%; }
+    .mainContComu .anuncioSemanal {
+      display: grid;
+      grid-template-columns: fr fr;
+      grid-template-rows: auto;
+      grid-template-areas: "anuncioTorneo anuncioTorneo" "avisoTorneo avisoTorneo" "avisoTorneo2 avisoTorneo2" "contTable contTable";
+      width: 100%; }
+      .mainContComu .anuncioSemanal .anuncioTorneo {
+        grid-area: anuncioTorneo;
+        width: 100%;
+        text-align: center; }
+        .mainContComu .anuncioSemanal .anuncioTorneo h3 {
+          text-align: center;
+          color: #0eb398;
+          font-size: 4rem;
+          font-family: "Anton", sans-serif;
+          line-height: 1;
+          text-transform: uppercase; }
+        .mainContComu .anuncioSemanal .anuncioTorneo p {
+          color: #ffffff; }
+      .mainContComu .anuncioSemanal .avisoTorneo {
+        width: 100%;
+        grid-area: avisoTorneo;
+        padding: 20px; }
+        .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo {
+          width: 100%;
+          text-align: left; }
+          .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo h3 {
+            color: #0eb398;
+            font-size: 2rem;
+            font-family: "Anton", sans-serif; }
+          .mainContComu .anuncioSemanal .avisoTorneo .tipoTorneo p {
+            color: #ffffff; }
+        .mainContComu .anuncioSemanal .avisoTorneo .conteTorn {
+          display: flex; }
+          .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo {
+            width: 100%;
+            margin: 20px; }
+            .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo img {
+              width: 100%; }
+            .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 {
+              background-color: #2c3e50; }
+              .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo .descripTorneo1 p {
+                margin: 5px;
+                padding: 5px;
+                color: #ffffff; }
+            .mainContComu .anuncioSemanal .avisoTorneo .conteTorn .itemTorneo:hover {
+              opacity: 0.6;
+              transform: scale(1.1);
+              transition: all 0.8s; }
+      .mainContComu .anuncioSemanal .avisoTorneo2 {
+        width: 100%;
+        grid-area: avisoTorneo2;
+        padding: 20px; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo {
+          width: 100%;
+          text-align: left; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo h3 {
+            color: #0eb398;
+            font-size: 2rem;
+            font-family: "Anton", sans-serif; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .tipoTorneo p {
+            color: #ffffff; }
+        .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn {
+          display: flex; }
+          .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo {
+            width: 100%;
+            margin: 20px; }
+            .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo img {
+              width: 100%; }
+            .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 {
+              background-color: #2c3e50;
+              width: 100%; }
+              .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo .descripTorneo1 p {
+                margin: 5px;
+                padding: 5px;
+                color: #ffffff; }
+            .mainContComu .anuncioSemanal .avisoTorneo2 .conteTorn .itemTorneo:hover {
+              opacity: 0.6;
+              transform: scale(1.1);
+              transition: all 0.8s; }
+      .mainContComu .anuncioSemanal .contTable {
+        width: 100%;
+        grid-area: contTable; }
+        .mainContComu .anuncioSemanal .contTable h3 {
+          text-align: center;
+          color: #0eb398;
+          font-size: 4rem;
+          font-family: "Anton", sans-serif;
+          line-height: 1;
+          text-transform: uppercase; }
+    .mainContComu .contComunit {
+      width: 100%;
+      grid-area: contComunit; }
+      .mainContComu .contComunit .decripCaptu {
+        width: 100%; }
+        .mainContComu .contComunit .decripCaptu h3 {
+          text-align: center;
+          color: #0eb398;
+          font-size: 4rem;
+          font-family: "Anton", sans-serif;
+          line-height: 1;
+          text-transform: uppercase; }
+      .mainContComu .contComunit .conteTorn {
+        display: flex; }
+        .mainContComu .contComunit .conteTorn .contCap {
+          width: 100%;
+          margin: 20px;
+          position: relative; }
+          .mainContComu .contComunit .conteTorn .contCap img {
+            width: 100%; }
+          .mainContComu .contComunit .conteTorn .contCap .cajas {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            display: block; }
+            .mainContComu .contComunit .conteTorn .contCap .cajas:hover {
+              background-color: #49bb8b;
+              position: absolute;
+              opacity: 0.4;
+              width: 100%;
+              height: 100%;
+              transition-duration: 1s;
+              transition-property: all; }
+            .mainContComu .contComunit .conteTorn .contCap .cajas h2 {
+              text-align: center;
+              color: #0eb398;
+              font-size: 4rem;
+              font-family: "Anton", sans-serif;
+              line-height: 1;
+              text-transform: uppercase;
+              font-size: 2rem;
+              display: none;
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #3a3636;
+              padding: 20px; }
+          .mainContComu .contComunit .conteTorn .contCap:hover h2 {
+            display: block; } }

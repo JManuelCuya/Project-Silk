@@ -53,9 +53,6 @@ body {
     font-family: $tipo_letra;
     font-size: 24px;
     text-transform: uppercase;
-    &:hover {
-        color: inherit;
-    }
 }
 
 @mixin imagenComunidad {
